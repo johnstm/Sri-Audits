@@ -4,7 +4,7 @@ Theme URI: http://wordpress.org/themes/twentythirteen
 Author: Terrific Minds
 Author URI: http://wordpress.org/
 Description: development Theme for Sri Audits chartered Associates
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
@@ -38,6 +38,11 @@ src: url(fonts/Wes-FY-Regular.ttf);
 --blk1: #2D2D2D ; 
 --wine: #74000D ; 
 --clr3: #F5F5F5 ; 
+--container-sm:100%;
+--container-md:100%;
+--container-lg:1000px;
+--container-xl:1300px;
+--container-xxl:1400px;
 }
  
  *{
@@ -49,10 +54,48 @@ src: url(fonts/Wes-FY-Regular.ttf);
     font-family:NeueMontreal-Regular;
  }
 
+/* Containers Sizes */
+.contentwrapper {
+    width: 100%;
+    max-width: var(--container-sm);
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+ 
+@media screen and (min-width:768px){
+    .contentwrapper {
+        max-width: var(--container-md);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contentwrapper {
+        max-width: var(--container-lg);
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .contentwrapper {
+        max-width: var(--container-lg);
+    }
+}
+
+@media screen and (min-width:1400px){
+    .contentwrapper {
+        max-width: var(--container-xl);
+    }
+}
+
+@media screen and (min-width:1600px){
+    .contentwrapper {
+        max-width: var(--container-xxl);
+    }
+}
+
 /* Front Page */
 
 /* HEADER STYLES */
-
 
 .hamburger{
     display: grid;
@@ -87,10 +130,6 @@ src: url(fonts/Wes-FY-Regular.ttf);
     display: flex;
     align-items: center;
     position: relative;
-}
-
-.contentwrapper{
-    margin: 0 auto ;
 }
 
 .sa__navmenu {
@@ -347,14 +386,12 @@ button{
 
 }
 
-
 /* Our Mission  */
    .sa__ourmission-featureimage {
      object-fit: cover;
      max-width: 100%;
    }
  
-
    .sa__ourmission-aim {  
     font-family: var(--font1);
     font-size:18px;
@@ -380,7 +417,6 @@ text-transform: capitalize;
     font-weight: 600;
     padding-bottom: 22px;
 }
-
 
 .sa__ourmission-aim .t__3{
     padding-bottom: 20px;
@@ -779,8 +815,6 @@ margin-right:8px;
     padding: 30px 20px;
 }
 
-
-
 /* Contact Page */
 .sa__random-mesh #grid1{
     top: -4px  ; 
@@ -861,64 +895,62 @@ margin-right:8px;
         align-items: center;
     }
     
+    /* Welcome to Sri audit */
 
-        /* Welcome to Sri audit */
+    .sa__welcometosri {
+        position: relative;
+    }
 
-        .sa__welcometosri {
-            position: relative;
-        }
+    /* .dummyblock1  {
+        width: 44%;
+    } */
 
-        /* .dummyblock1  {
-            width: 44%;
-        } */
+        #mesh1b , 
+    .sa__welcometosri  #mesh2b  {
+        width: 125px;
+        height: 125px;
+        position: absolute;
+    }
 
-         #mesh1b , 
-        .sa__welcometosri  #mesh2b  {
-            width: 125px;
-            height: 125px;
-            position: absolute;
-        }
+    .sa__welcome-wrapper #mesh2b{
+        bottom: 0px;
+        left: 0px;
+    }
 
-        .sa__welcome-wrapper #mesh2b{
-            bottom: 0px;
-            left: 0px;
-        }
-
-        .sa__welcome-wrapper div {
-            padding: 0px;
-        }
-        
-        .contentwrapper2{
-            width: 70%;
-        }
+    .sa__welcome-wrapper div {
+        padding: 0px;
+    }
     
-        .sa__welcome-wrapper .block1 {
-            width: 35%;
-        }
+    .contentwrapper2{
+        width: 70%;
+    }
+
+    .sa__welcome-wrapper .block1 {
+        width: 35%;
+    }
+
+    .sa__welcome-wrapper .block2 {
+        width: 65%;
+    }
     
-        .sa__welcome-wrapper .block2 {
-            width: 65%;
-        }
-        
-        /* Our Mission */
+    /* Our Mission */
 
-        .container3 {
-            display: flex;
-            column-gap: 106px;
-        }
+    .container3 {
+        display: flex;
+        column-gap: 106px;
+    }
 
-        /* Our Services root */
-        .sa__servies-gridwrap{
-            grid-template-columns: repeat(3,1fr);
-        }
+    /* Our Services root */
+    .sa__servies-gridwrap{
+        grid-template-columns: repeat(3,1fr);
+    }
 
-        .sa__service-card{
-            display: flex;
-            min-width: 200px;
-            max-width: 340px ;
-        }
+    .sa__service-card{
+        display: flex;
+        min-width: 200px;
+        max-width: 340px ;
+    }
 
-        
         /*  Our Services  */
 
     .sa__touch{
@@ -1337,9 +1369,7 @@ line-height: 60px;
 
 
 @media screen and (min-width:1200px) {
-  .contentwrapper{
-    width: 85%;
-  }
+  
 
   .sa__addresswrapper , .sa__contactdetails-wrap{ 
     width:  85% ;
