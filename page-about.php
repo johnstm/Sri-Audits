@@ -38,7 +38,9 @@ get_header();
         <?php 
             $imgcontent1 = get_field('image_block_1');
          ?>
-        <img src="<?php if( $imgcontent1) echo $imgcontent1["url"] ?>" alt="<?php echo  $imgcontent1["alt"] ?>"  class="image1"  />
+         <div class="image1"  >
+        <img src="<?php if( $imgcontent1) echo $imgcontent1["url"] ?>" alt="<?php echo  $imgcontent1["alt"] ?>"  />
+</div>
     </div>
 </div>
 
