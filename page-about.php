@@ -66,7 +66,7 @@ get_header();
        
         <div>
             <?php $image3 = get_field('image_block_3'); ?>
-            <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="" />
+            <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
         </div>
         <div class="sa__ourmission-aim">
             <span class="t1">What We aim</span> 
