@@ -485,6 +485,7 @@ margin-right:8px;
 }
 /*  Our Services */
 
+
 /* About PAge */
 
 .sa__about-who{
@@ -596,6 +597,56 @@ align-items: center;
 }
 
 .sa__member-img{
+}
+
+/* Gallery Slider */
+.sa__gallery-sqaure{
+    display: none;
+}
+.sa__gallery-wrapper .splide__track{
+    margin-top: 50px;
+}
+.sa__gallery-wrapper{
+    padding-top:40px !important;
+    padding-bottom: 30px !important;
+}
+.sa__gallery-wrapper .gallery__img img{
+    width:100%;
+    height:100%;
+}
+.sa__gallery-wrapper .slick-list{
+    width: 100% !important;
+}
+.sa__gallery-wrapper .slick-prev,.sa__gallery-wrapper .slick-next{
+    border: solid #74000D;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 0px;
+    
+    top: 35%;
+    width: 14px;
+    height: 14px;
+    z-index: 5;
+}
+.sa__gallery-wrapper .slick-prev{
+    transform: rotate(135deg);
+    left:-8px;
+}
+.sa__gallery-wrapper .slick-next{
+    transform: rotate(315deg);
+    right:-8px;
+}
+.slick-next::before, .slick-prev::before{
+    opacity: 1 !important;
+    color:transparent;
+}
+.slick-disabled{
+    display: none !important;
+}
+.sa__gallery-wrapper .gallery__img{
+    width:20% !important;
+    height:auto;
+    padding:0 25px;
 }
 
 /* About PAge */
@@ -783,80 +834,6 @@ align-items: center;
     .sa__ourmission-aim .t__3{
         font-size:3.4vw !important;
     }
-}
-
-/*Gallery section*/
-.sa__gallery-sqaure{
-    position: absolute;
-    top: -122px;
-    left: -124px;
-
-}
-.sa__gallery-wrapper .splide__track{
-    margin-top:70px;
-}
-.sa__gallery-wrapper .gallery__img{
-    width:20% !important;
-    height:230px;
-    padding:0 25px;
-}
-.sa__gallery-wrapper .gallery__img img{
-    width:100%;
-    height:100%;
-}
-.sa__gallery-wrapper .slick-list{
-    width: 100% !important;
-}
-.sa__gallery-wrapper .slick-prev,.sa__gallery-wrapper .slick-next{
-    border: solid #74000D;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 0px;
-    
-    top: 35%;
-    width: 14px;
-    height: 14px;
-    z-index: 5;
-}
-.sa__gallery-wrapper .slick-prev{
-    transform: rotate(135deg);
-    left:-8px;
-}
-.sa__gallery-wrapper .slick-next{
-    transform: rotate(315deg);
-    right:-8px;
-}
-.slick-next::before, .slick-prev::before{
-    opacity: 1 !important;
-    color:transparent;
-}
-.slick-disabled{
-    display: none !important;
-}
-@media(max-width:1024px){
-    .sa__gallery-sqaure{
-        display: none;
-    }
-}
-@media(max-width:991px){
-    .sa__gallery-wrapper{
-        padding-top: 70px !important;
-        padding-bottom: 45px !important;
-    }
-    .sa__gallery-wrapper .splide__track{
-        margin-top: 50px;
-    }
-}
-@media (max-width:767px){
-    .sa__gallery-wrapper .gallery__img{
-        height:auto;
-    }
- 
-    .sa__gallery-wrapper{
-        padding-top:40px !important;
-        padding-bottom: 30px !important;
-    }
-
 }
 
 /* SErvices Page */
@@ -1290,7 +1267,13 @@ border-radius: 6px;
 margin-right:8px;
 } 
 
-
+.sa__gallery-wrapper{
+    padding-top: 70px;
+    padding-bottom: 45px;
+}
+.sa__gallery-wrapper .gallery__img{
+    height:230px;
+}
 .sa__teammembers-wrapper{
     grid-template-columns: repeat(3,1fr);
 }
@@ -1508,7 +1491,9 @@ line-height: 60px;
 font-size: 36px;
 line-height: 60px;
 } 
-
+.sa__gallery-wrapper .splide__track{
+    margin-top:70px;
+}
 .sa__teammembers-wrapper{
     grid-template-columns: repeat(4 , 1fr);
     column-gap: 28px;
@@ -1560,6 +1545,15 @@ line-height: 60px;
 /* Contact Page */
 }
 
+@media(min-width:1025px){
+    .sa__gallery-sqaure{
+        position: absolute;
+        top: -122px;
+        left: -124px;
+        display: block;
+    
+    }
+}
 
 @media screen and (min-width:1200px) {
   
