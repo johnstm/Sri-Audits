@@ -535,10 +535,13 @@ margin-right:8px;
 }
 
 
-.sa__about-textcontent1 {
+.sa__about-textcontent1,.sa__about-textcontent2 {
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    margin-top: 0px;
+    position: relative;
     flex-direction: column;
 }
 
@@ -548,10 +551,14 @@ margin-right:8px;
     font-style :normal ;
     font-size:16px;
     line-height: 22px;
-    min-width:300px;
-    padding: 10px;
+    margin:50px 0;
+    padding:0;
+    width:100%;
+    min-width: none;
 }
-
+.sa__about-textcontent1 .textblock1 {
+    margin-top: 0;
+}
 .sa__about-textcontent1 .image1 ,
 .sa__about-textcontent2 .image1{
     width: 100%;
@@ -709,76 +716,6 @@ align-items: center;
 }
 
 /* About PAge */
-
-/*What we do section */
-
-
-.sa__about-textcontent1,.sa__about-textcontent2 {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 0px;
-    position: relative;
-}
-
-.sa__about-textcontent2 {
-    flex-direction: row-reverse;
-    margin-top: 90px;
-    
-}
-@media (max-width:1024px) {
-    .sa__about-textcontent1,.sa__about-textcontent2 {
-        margin-top: 0;
-    }
-    .sa__about-textcontent2 {
-
-        margin-top: 70px;
-        
-}
-}
-
-@media (max-width:767px) {
-    .sa__about-textcontent1,.sa__about-textcontent2 {
-        flex-direction: column;
-        margin-top: 0;
-    }
-}
-.sa__about-textcontent1  .textblock1 ,
-.sa__about-textcontent2  .textblock1  {
-    font-size:16px;
-    line-height: 22px;
-    min-width:300px;
-    padding: 10px 30px 10px 0;
-    width: 50%;
-}
-.sa__about-textcontent2 .textblock1{
-    padding-left: 30px;
-    padding-right: 0px;
-}
-@media (max-width:1024px) {
-    .sa__about-textcontent1 .textblock1 {
-        padding-right:40px;
-    }
-    .sa__about-textcontent2 .textblock1{
-        padding-left:40px;
-    }
-}
-
-@media (max-width:767px) {
-    .sa__about-textcontent1 .textblock1 , 
-    .sa__about-textcontent2 .textblock1 {
-        margin:50px 0;
-        padding:0;
-        width:100%;
-        min-width: none;
-    }
-    .sa__about-textcontent1 .textblock1 {
-        margin-top: 0;
-    }
-
-}
-
 
 /* SErvices Page */
 
@@ -1157,12 +1094,23 @@ align-items: center;
 
 
     /* About PAge */
-
-.sa__about-who{
-    margin: 0px auto 40px auto;
-    font-size:30px;
-    line-height:38px;
+    .sa__about1wrapper{
+        margin-bottom: 70px;
+    }
+    .sa__about-who{
+        margin: 0px auto 40px auto;
+        font-size:30px;
+        line-height:38px;
 }
+    .sa__about-textcontent1,.sa__about-textcontent2 {
+  
+        flex-direction: row;
+    }
+    .sa__about-textcontent2 {
+  
+        flex-direction: row-reverse;
+    
+    }
     .sa__about-textcontent1 .sa__about-right ,
     .sa__about-textcontent2 .sa__about-left  {
         width: 50%;
@@ -1173,11 +1121,24 @@ align-items: center;
     position: relative;
 } */
 
-
-
+    .sa__about-textcontent1  .textblock1 ,
+    .sa__about-textcontent2  .textblock1  {
+        font-size:16px;
+        line-height: 22px;
+        min-width:300px;
+        padding: 0px 30px 0px 0;
+        width: 50%;
+        margin-top: 50px;
+    }
+    .sa__about-textcontent1 .textblock1 {
+        padding-right:40px;
+    }
+    .sa__about-textcontent2 .textblock1{
+        padding-left:40px;
+    }
  
 .sa__ourmission{
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
  .sa__ourmission-aim {  
@@ -1280,8 +1241,14 @@ margin-right:8px;
 /* Contact Page */
 
 }
+@media(min-width:800px){
 
+    .sa__about-textcontent1, .sa__about-textcontent2 {
+        margin-top: 50px;
 
+    }
+
+}
 @media screen and (min-width:992px){
     .contentwrapper{
         padding:0 5%;
@@ -1399,12 +1366,13 @@ margin-right:8px;
 }
 
 .sa__about1wrapper{
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     position: relative;
 }
 
 
-.sa__about-textcontent1 {
+.sa__about-textcontent2{
+    margin-top: 70px;
    
 }
 
@@ -1414,8 +1382,6 @@ margin-right:8px;
     line-height: 22px;
  
 }
-
-
 
 .sa__ourmission{
     padding-top: 0px;
@@ -1508,6 +1474,15 @@ line-height: 60px;
 @media(min-width:1025px){
     .sa__about-img {
         display: block;
+    }
+    .sa__about-textcontent2 {
+        
+        margin-top: 90px;
+        
+    }
+    .sa__about-textcontent2 .textblock1{
+        padding-left: 30px;
+        padding-right: 0px;
     }
     .sa__about-textcontent1 .sa__about-right ,
     .sa__about-textcontent2 .sa__about-left {
