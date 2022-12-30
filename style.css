@@ -106,8 +106,8 @@ src: url(fonts/Wes-FY-Regular.ttf);
 
 .sa__navmenu {
     height: 40px;
-    box-shadow:  5px 8px #00000014 ;
-    padding: 10px 10px 10px 5px;
+    /* box-shadow:  5px 8px #00000014 ;
+    padding: 10px 10px 10px 5px; */
 }
 
 .sa__navmenu .custom-logo{
