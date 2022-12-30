@@ -699,8 +699,16 @@ align-items: center;
     position: absolute;
     font-size: 0px;
     top: 50%;
+}
+
+.sa__gallery-wrapper .slick-arrow.slick-next {
+    transform: translateY(-50%) rotate(-45deg);
+    right: -10px;
+}
+
+.sa__gallery-wrapper .slick-arrow.slick-prev{
     transform: translateY(-50%) rotate(135deg);
-    right:-8px;
+    left: -10px;
 }
 
 .slick-next::before, .slick-prev::before{
@@ -1715,7 +1723,7 @@ line-height: 60px;
 .sa__gallery-wrapper{
     position: relative;
     background-color: var(--clr3) ;
-
+    padding-bottom: 60px;
 }
 
 .sa__gallery-wrapper .grid_square1 {
@@ -1727,7 +1735,6 @@ line-height: 60px;
 .splide__track  .splide__list{
     display: flex;
     justify-content: space-between ;
-    margin-bottom: 60px;
 }
 
 .splide__track  .splide__list .slick-list .slick-track{
