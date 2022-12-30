@@ -24,11 +24,14 @@ get_header();
 
 <p class="sa__about-who">Who we are</p>
 
+
+
 <section class="sa__about1wrapper">
-<img src="" alt="grid" class="">
+
 
 <div class="contentwrapper">
     <div class="sa__about-textcontent1">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__about-img"/>
         <div class="textblock1">
             <?php  $textcontent1 = get_field('text_block_1') ;
                     if($textcontent1)
@@ -38,14 +41,18 @@ get_header();
         <?php 
             $imgcontent1 = get_field('image_block_1');
          ?>
-      
+        <div class="sa__about-right">
         <img src="<?php if( $imgcontent1) echo $imgcontent1["url"] ?>" alt="<?php echo  $imgcontent1["alt"] ?>"  class="image1"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__about-leftImage" />
+         
+</div>
 
     </div>
 </div>
 
 <div class="contentwrapper">
     <div class="sa__about-textcontent2">
+ 
         <div class="textblock1">
             <?php  $textcontent2 = get_field('text_block_2') ;
                     if($textcontent2)
@@ -55,7 +62,10 @@ get_header();
         <?php 
             $imgcontent2 = get_field('image_block_2');
          ?>
+        <div class="sa__about-left">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__about-rightImage"/>
         <img src="<?php if( $imgcontent2) echo $imgcontent2["url"] ?>" alt="<?php echo  $imgcontent2["alt"] ?>"  class="image1"  />
+</div>
     </div>
 </div>
 
@@ -66,13 +76,15 @@ get_header();
        
         <div>
             <?php $image3 = get_field('image_block_3'); ?>
-            <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="" />
+            <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
         </div>
         <div class="sa__ourmission-aim">
             <span class="t1">What We aim</span> 
-
+       
             <p class="t2">Our Mission </p>
-
+           
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__ourmission-sqaure" />
+         
             <p class="t__3 d-flex align-center">
                 <span class="d-flex justify-center">S</span> erve with Quality
             </p>
@@ -158,10 +170,9 @@ get_header();
 </section>
 
 <section class="sa__gallery-wrapper">
-    <img src="" alt="grid" class="grid_square1" />
-
+    
     <p class="sa__about-who"> Gallery </p>
-
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__gallery-sqaure" />
     <div class="contentwrapper">
 
         <div class="splide__track">
@@ -188,7 +199,7 @@ get_header();
 
     </div>
 
-    <a href="#" class="sa__gallery-expand"><p class="text-center"> View Gallery</p></a>
+  
 </section>
 
 
@@ -205,9 +216,46 @@ get_header();
 
 
 </main>
+<script>
+var $carousel = $('.splide__list');
+
+var settings = {
+  dots: false,
+  arrows: true,
+  slide: '.gallery__img',
+  slidesToShow: 5,
+  slidesToScroll:1,
+  infinite:false,
+
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        
+        slidesToShow: 2
+      }
+    },
+ 
+
+]
+};
+
+
+$carousel.slick(settings);
+
+
+
+
+</script>
+
 
 <?php
 get_footer();
 ?>
-
-  
