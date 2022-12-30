@@ -5,7 +5,7 @@
 <?php
  $banner = get_field('main_banner');
 ?> 
- <div class="sa__bannerwrapper" style="background-image:url('<?php echo $banner['url']?>')">
+ <div class="sa__bannerwrapper">
     <img src="<?php
      if($banner):
         echo $banner['url'];
