@@ -168,7 +168,94 @@ get_header();
 </div>
 
 </section>
+<section class="sa__gallery-wrapper">
+    
+    <p class="sa__about-who"> Our Team </p>
+    
+    <div class="contentwrapper teamwrapper">
 
+        <div class="splide__track">
+            <div class="splide__list">
+                <!-- <?php
+                    $i=1 ;
+
+                    while(true){
+                        $slide = get_field("gallery_slide_$i");
+                        
+                        if(!$slide){
+                            break;
+                        }
+
+                        echo '<div class="gallery__img">'.
+                             '<img src="'.$slide["url"].'" alt="'.$slide["alt"].'" class="gallery__imgslide" >'.
+                             '</div>';
+
+                        $i++ ;
+                    }
+                ?> -->
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Sridhar</h4>
+                        <h6> B.Com.FCA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Srinivasan </h4>
+                        <h6> B.Com.FCA, DISA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. I. Jayasindhu </h4>
+                        <h6> B.Com.FCA, DISA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Sripriya </h4>
+                        <h6> B.Com.FCA, Grad.CWA</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Sridhar</h4>
+                        <h6> B.Com.FCA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Srinivasan </h4>
+                        <h6> B.Com.FCA, DISA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. I. Jayasindhu </h4>
+                        <h6> B.Com.FCA, DISA (Partner)</h6>
+                </div>
+                </div>
+                <div class="sa__team-member">
+                    <img />
+                    <div class="sa__team-details">
+                        <h4>CA. R. Sripriya </h4>
+                        <h6> B.Com.FCA, Grad.CWA</h6>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  
+</section>
 <section class="sa__welcometosri">
     <img id="mesh2b" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-none d-md-block" alt="east" style=" bottom: 0px;left: 0px;" >
 
@@ -233,6 +320,44 @@ get_header();
 	?>
 
 </main>
+<script>
+var $carousel = $('.splide__list');
+
+var settings = {
+  dots: false,
+  arrows: true,
+  slide: '.sa__team-member',
+  slidesToShow: 4,
+  slidesToScroll:1,
+  infinite:false,
+
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        
+        slidesToShow: 1
+      }
+    },
+ 
+
+]
+};
+
+
+$carousel.slick(settings);
+
+
+
+
+</script>
 <?php
 get_footer();
 ?>
