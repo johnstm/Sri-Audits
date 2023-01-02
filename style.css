@@ -126,6 +126,7 @@ src: url(fonts/Wes-FY-Regular.ttf);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0px;
 }
 
 .sa__navmenu-right{
@@ -255,8 +256,13 @@ button{
     object-fit: cover;
     max-width: 100%;
     max-height: 100% ;
-  }
+}
 
+@media screen and (max-width:767px) {
+    .sa-home__banner{
+        height: 420px;
+    }
+}
 
 .testo__1 h1 {
     font-family:  var(--font3);
@@ -481,10 +487,13 @@ margin-right:8px;
 /*  Our Services */
 
 .sa__servies-gridwrap{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   column-gap: 20px;
-   row-gap: 40px;
+   /* display: grid; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+   /* grid-template-columns: repeat(2,1fr); */
+   /* column-gap: 20px; */
+   /* row-gap: 40px; */
    padding: 20px;
 }
 
@@ -498,7 +507,10 @@ margin-right:8px;
     box-shadow: 0px 3px 6px #3C3C3C1F;
     min-height: 250px;
     padding: 20px 10px;
+    width: 44%;
+    margin-bottom: 20px;
 }
+
 
 .sa__service-card-img{
     width: 140px;
@@ -513,6 +525,38 @@ margin-right:8px;
     font-family: var(--font2);
     color: var(--blk1);
 }
+
+@media screen and (max-width:767px) {
+    .sa__service-card{
+        width: 44%;
+    }
+
+    .sa__service-card:nth-child(2n-1){
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .sa__service-card{
+        width: 30%;
+        margin:0px  10px 20px 10px ;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .sa__service-card{
+        width: 20%;
+        margin:0px  32px 32px 32px ;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .sa__service-card{
+        margin-bottom: 80px;
+    }
+}
+
 /*  Our Services */
 
 
@@ -607,18 +651,18 @@ text-transform: capitalize;
 
 .sa__ourmission-aim .t__3 span ,
 .sa__ourmission-aim .t__3 div {
-background-color: var(--wine);
-font-size: 22px;
-line-height: 40px;
-font-family: var(--font3);
-color: #fff;
-justify-content: center;
-width: 40px;
-height: 40px;
-border-radius: 6px;
-margin-right:8px;
-display: flex;
-align-items: center;
+    background-color: var(--wine);
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--font3);
+    color: #fff;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    margin-right:8px;
+    display: flex;
+    align-items: center;
 } 
 .sa__ourmission .sa__ourmission-image{
     height:380px;
@@ -631,7 +675,7 @@ align-items: center;
     width: 100%;
 } 
 .sa__ourmission-aim .t__3{
-    font-size:3.4vw ;
+    font-size:12px ;
 }
 .sa__ourmission-wrap{
     display: flex;
