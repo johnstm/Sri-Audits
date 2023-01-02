@@ -78,7 +78,7 @@ get_header();
 
                            <p id="subtext-'.$i.'" class="d-none sa__service-accordion-text ">'.$serviceSubtext.'</p>
                         </div>
-                          <img id="plusicon-'.$i.'" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/plus-1-1-Traced.png" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
+                          <img id="plusicon-'.$i.'" src="<?php echo get_template_directory_uri(); ?>/assets/images/plus.png" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
                       </div>   
                     
                     </div>
