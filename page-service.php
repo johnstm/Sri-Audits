@@ -39,11 +39,10 @@ get_header();
  
 <section class="sa__serviceswrapper">
  
-
-<img  src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/west.jpg" id="grid1" alt="grid"  >
-  <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Group-752@2x.jpg" id="grid2" alt="grid" >
-  <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Group-752@2x.jpg" id="grid3" alt="grid" >
-  <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/west.jpg" id="grid4" alt="grid" >
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" id="grid1" alt="grid"/>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/three-sqaure.png" id="grid2" alt="grid"/>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/three-sqaure.png" id="grid3" alt="grid"/>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" id="grid4" alt="grid"/>
 
 
    <?php 
