@@ -303,14 +303,29 @@ button{
 /* Welcome to Sri Audits */
 
 .sa__welcometosri{
-    padding:50px 0;
+    padding:55px 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+.sa__welcome-img,.sa__welcome-topImage{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+}
+.sa__welcome-topImage{
+    top:0;
+    left:calc(40% - 220px);
 
+}
 .contentwrapper2{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0px 20px;
+    position: relative;
 }
 
 /* .sa__welcome-wrapper div {
@@ -650,9 +665,6 @@ margin-right:8px;
     height: 100% ;
 }
 
-.sa__ourmission{
-    padding-top: 24px;
-}
 
  .sa__ourmission-aim {  
     font-family: var(--font1);
@@ -1116,10 +1128,12 @@ text-transform: capitalize;
     }
     
     /* Welcome to Sri audit */
-
-    .sa__welcometosri {
+    .sa__main{
         position: relative;
-        padding:60px 0;
+    }
+    .sa__welcometosri {
+        
+        padding:68px 0;
     }
 
     /* .dummyblock1  {
@@ -1146,7 +1160,8 @@ text-transform: capitalize;
 
     .sa__welcome-wrapper .block1 {
         width: 35%;
-        height:300px;
+
+        margin-bottom: 0;;
         }
 
     .sa__welcome-wrapper .block2 {
@@ -1637,7 +1652,15 @@ line-height: 60px;
     .contentwrapper2{
         padding:0 5%;
     }
-
+    .sa__welcometosri{
+        padding:0;
+    }
+    .sa__welcome-img,.sa__welcome-topImage{
+        display: block;
+    }
+    .sa__welcome-wrapper .block1 {
+        height:430px;
+        }
     .sa__about-img {
         display: block;
     }
@@ -1741,6 +1764,7 @@ line-height: 60px;
     .sa__ourmission-aim .t2 {
         margin-bottom: 30px;
     }
+
 }
 
 /* HEADER STYLES */
