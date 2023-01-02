@@ -1927,7 +1927,7 @@ line-height: 60px;
 .sa__gallery-wrapper{
     position: relative;
     background-color: var(--clr3) ;
-    padding-bottom: 95px;
+    padding-bottom: 80px;
 }
 
 .sa__gallery-wrapper .grid_square1 {
