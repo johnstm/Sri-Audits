@@ -15,7 +15,7 @@ get_header();
     <img class="sa-home__banner" src=<?php
      if($bannerimg)
         echo $bannerimg["url"]; 
-     else echo "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/8/8e/Nidavellir.png/revision/latest?cb=20180517190710&path-prefix=es" ?>
+      ?>
       alt ="Sri audits Chartered Associates"  > 
       
     <div class="wrapper__1">
@@ -129,6 +129,9 @@ get_header();
 
 <!-- tood : what we do  -->
 <section class="sa__ourservices">
+ <img class="mesh mesh1" src="<?php echo get_template_directory_uri() . '/assets/images/meshservice.png';   ?>">
+ <img class="mesh mesh2" src="<?php echo get_template_directory_uri() . '/assets/images/meshservice.png';   ?>">
+
 
  <div class="sa__p1"> What we do</div>
 
@@ -163,11 +166,11 @@ get_header();
             $i++ ; 
         }
     ?>
-
-    
 </div>
 
 </section>
+
+
 <section class="sa__gallery-wrapper">
     
     <p class="sa__about-who"> Our Team </p>

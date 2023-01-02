@@ -17,16 +17,45 @@
             <span>About Us</span>
             </a>
             </li>
+            <li>
+            <a href="/">
+            <span>Our Vision</span>
+            </a>
+            </li>
+            <li>
+            <a href="/services">
+            <span>Services</span>
+            </a>
+            </li>
+            <li>
+            <a href="/">
+            <span>Our Team</span>
+            </a>
+            </li>
         
         </ul>
 
         <ul>
             <li>
-                <a href="/gallery">
+                <a href="/">
             <span>Gallery</span>
                 </a>
             </li>
-        
+            <li>
+                <a href="/">
+            <span>Useful Links</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+            <span>News & Events</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+            <span>Branches</span>
+                </a>
+            </li>
         </ul>
         </div>
 
@@ -49,9 +78,9 @@
     </div>
   </section>
 
-    <div class="sa__reserved">  
+    <!-- <div class="sa__reserved">  
         <span >© 2018. All rights reserved. Powered by Xenfy Infolabs(P)Ltd.</span>
-    </div>
+    </div> -->
 </footer>
 
 </body>
