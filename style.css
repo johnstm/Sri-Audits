@@ -450,8 +450,8 @@ margin-right:8px;
     background-color: var(--clr3) ;
 }
 
-.sa__ourservices {
-    padding-top: 30px;
+.sa__ourservices  {
+    padding-top: 70px;
     position: relative;     
 }
 
@@ -533,6 +533,7 @@ margin-right:8px;
    /* column-gap: 20px; */
    /* row-gap: 40px; */
    padding: 20px;
+   padding-bottom: 50px;
 }
 
 .sa__service-card{
@@ -1423,15 +1424,20 @@ margin-right:8px;
 
 
 
-         /* Our Services root */
-         .sa__servies-gridwrap{
-            padding: 0px;
-            margin-top: 90px;
-            display: flex;
-            flex-wrap: wrap;
-            /* grid-template-columns: repeat(3,1fr); */
-        }
-        /*  Our Services  */
+    /* Our Services root */
+    .sa__ourservices {
+        padding-top: 90px;
+    }
+
+    .sa__servies-gridwrap{
+        padding: 0px;
+        padding-bottom: 70px;
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-template-columns: repeat(3,1fr); */
+    }
+/*  Our Services  */
 
 
      /* What we do  */
@@ -1683,6 +1689,14 @@ line-height: 60px;
     .sa__team-details h6{
         font-size: 16px;
         line-height: 26px;
+    }
+
+    .sa__servies-gridwrap{
+        padding-bottom: 20px;
+    }
+
+    .sa__ourservices  {
+        padding-top: 100px;
     }
 
 }
