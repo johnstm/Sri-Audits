@@ -197,56 +197,56 @@ get_header();
                     }
                 ?> -->
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sridhar</h4>
                         <h6> B.Com.FCA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Srinivasan </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. I. Jayasindhu </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sripriya </h4>
                         <h6> B.Com.FCA, Grad.CWA</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sridhar</h4>
                         <h6> B.Com.FCA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Srinivasan </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. I. Jayasindhu </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sripriya </h4>
                         <h6> B.Com.FCA, Grad.CWA</h6>
@@ -336,10 +336,17 @@ var settings = {
 
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1485,
       settings: {
         
         slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        
+        slidesToShow: 2
       }
     },
     {
