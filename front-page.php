@@ -36,9 +36,11 @@ get_header();
 
 <!-- todo : welcome to  -->
 
-<section class="sa__welcometosri">
-    <img id="mesh2b" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-none d-md-block" alt="east" style=" bottom: 0px;left: 0px;" >
+<section class="sa__main">
+<div class="sa__welcometosri">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-topImage"/>
 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-img"/>
 
     <div class="sri__welcome-wrapper"> 
 
@@ -51,11 +53,10 @@ get_header();
     </div>
 
     <div class="contentwrapper2">
+
         <div class="sa__welcome-wrapper">
 
             <div class="block1">
-
-                <img id="mesh1" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-md-none" alt="east" >
 
                 <div class="sa__welcome-textwrap">
                     <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */ font-size: 22px; margin-bottom: 13px;  line-height: 33px; ">About Us</p>
@@ -63,7 +64,7 @@ get_header();
                     <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> Welcome to Sridhar & Co Chartered Associates</h2>
                 </div>
 
-                <img id="mesh2" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-md-none" alt="east" > 
+              
             </div>
 
             <div class="block2">
@@ -81,9 +82,7 @@ get_header();
 
         </div>
     </div>
-
-    <img id="mesh2b" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-none d-md-block" alt="east" style=" bottom: 0px;left: 0px;" >
-
+</div>
 </section>
 
 <!-- todo : what we aim  -->
@@ -197,56 +196,56 @@ get_header();
                     }
                 ?> -->
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sridhar</h4>
                         <h6> B.Com.FCA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Srinivasan </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. I. Jayasindhu </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sripriya </h4>
                         <h6> B.Com.FCA, Grad.CWA</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sridhar</h4>
                         <h6> B.Com.FCA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Srinivasan </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. I. Jayasindhu </h4>
                         <h6> B.Com.FCA, DISA (Partner)</h6>
                 </div>
                 </div>
                 <div class="sa__team-member">
-                    <img />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
                     <div class="sa__team-details">
                         <h4>CA. R. Sripriya </h4>
                         <h6> B.Com.FCA, Grad.CWA</h6>
@@ -259,8 +258,11 @@ get_header();
 
   
 </section>
-<section class="sa__welcometosri">
-    <img id="mesh2b" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-none d-md-block" alt="east" style=" bottom: 0px;left: 0px;" >
+<section class="sa__main">
+    <div class="sa__welcometosri">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-topImage"/>
+
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-img"/>
 
 
     <div class="sri__welcome-wrapper"> 
@@ -277,16 +279,13 @@ get_header();
         <div class="sa__welcome-wrapper">
 
             <div class="block1">
-
-                <img id="mesh1" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-md-none" alt="east" >
-
                 <div class="sa__welcome-textwrap">
                     <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */ font-size: 22px; margin-bottom: 13px;  line-height: 33px; ">Our Guarantee</p>
 
                     <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> We are a part of Batgach</h2>
                 </div>
 
-                <img id="mesh2" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-md-none" alt="east" > 
+              
             </div>
 
             <div class="block2">
@@ -304,9 +303,7 @@ get_header();
 
         </div>
     </div>
-
-    <img id="mesh2b" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/gridh.jpg" class="d-none d-md-block" alt="east" style=" bottom: 0px;left: 0px;" >
-
+                </div>
 </section>
 <!-- flex word :  -->
 
@@ -336,10 +333,17 @@ var settings = {
 
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1525,
       settings: {
         
         slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        
+        slidesToShow: 2
       }
     },
     {

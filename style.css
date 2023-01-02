@@ -303,14 +303,29 @@ button{
 /* Welcome to Sri Audits */
 
 .sa__welcometosri{
-    padding:50px 0;
+    padding:55px 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+.sa__welcome-img,.sa__welcome-topImage{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+}
+.sa__welcome-topImage{
+    top:0;
+    left:calc(40% - 220px);
 
+}
 .contentwrapper2{
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0px 20px;
+    position: relative;
 }
 
 /* .sa__welcome-wrapper div {
@@ -651,9 +666,6 @@ margin-right:8px;
     height: 100% ;
 }
 
-.sa__ourmission{
-    padding-top: 24px;
-}
 
  .sa__ourmission-aim {  
     font-family: var(--font1);
@@ -805,22 +817,29 @@ text-transform: capitalize;
     border-radius: 8px;
     padding: 34px 30px 34px 28px;
     margin: 0 20px;
+    display: flex !important;
+    align-items: center;
 
 }
 .sa__team-details h4{
     font-size: 16px;
-    line-height: 19px;
+    line-height: 16px;
     color:#2D2D2D;
     font-weight: 400;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     font-family: var(--font2);
 }
 .sa__team-details h6{
     font-size: 12px;
-    line-height: 22px;
+    line-height: 12px;
     font-weight: 100;
     color:#2D2D2D;
     font-family: var(--font1);
+}
+.sa__team-icon{
+    width: 23px;
+    margin-right: 12px;
+
 }
 .teamwrapper{
     max-width: 350px;
@@ -1110,10 +1129,12 @@ text-transform: capitalize;
     }
     
     /* Welcome to Sri audit */
-
-    .sa__welcometosri {
+    .sa__main{
         position: relative;
-        padding:60px 0;
+    }
+    .sa__welcometosri {
+        
+        padding:68px 0;
     }
 
     /* .dummyblock1  {
@@ -1140,7 +1161,8 @@ text-transform: capitalize;
 
     .sa__welcome-wrapper .block1 {
         width: 35%;
-        height:300px;
+
+        margin-bottom: 0;;
         }
 
     .sa__welcome-wrapper .block2 {
@@ -1310,6 +1332,17 @@ margin-right:8px;
 .sa__ourmission .sa__ourmission-image{
     height:600px;
 }
+.sa__gallery-wrapper .slick-prev,.sa__gallery-wrapper .slick-next{
+    width:16px;
+    height:16px;
+
+}
+.sa__gallery-wrapper .slick-arrow.slick-next {
+    right:-18px;
+}
+.sa__gallery-wrapper .slick-arrow.slick-prev{
+    left:-18px
+}
 .sa__gallery-wrapper{
     padding-top: 70px;
     padding-bottom: 45px;
@@ -1321,8 +1354,13 @@ margin-right:8px;
     margin: 0 18px;
 
 }
+.sa__team-icon{
+    width: 23px;
+    margin-right: 12px;
+
+}
 .teamwrapper{
-    max-width: unset;
+    max-width: 600px;
 }
 .sa__teammembers-wrapper{
     grid-template-columns: repeat(3,1fr);
@@ -1562,6 +1600,9 @@ line-height: 60px;
     grid-template-columns: repeat(4 , 1fr);
     column-gap: 28px;
 }
+.teamwrapper{
+    max-width: unset;
+}
 
 .sa__member-card{
     min-width: 240px;
@@ -1617,7 +1658,15 @@ line-height: 60px;
     .contentwrapper2{
         padding:0 5%;
     }
-
+    .sa__welcometosri{
+        padding:0;
+    }
+    .sa__welcome-img,.sa__welcome-topImage{
+        display: block;
+    }
+    .sa__welcome-wrapper .block1 {
+        height:430px;
+        }
     .sa__about-img {
         display: block;
     }
@@ -1678,17 +1727,24 @@ line-height: 60px;
         margin-top:70px;
     }
     .sa__team-member{
-        margin: 0 21px;
-        padding:45px 45px 45px 26px;
+        margin: 0 25px;
+        padding:48px 45px 48px 26px;
     
     }
     .sa__team-details h4{
         font-size: 20px;
-        line-height: 30px;
+        line-height: 20px;
+        margin-bottom: 10px;
     }
     .sa__team-details h6{
         font-size: 16px;
-        line-height: 26px;
+        line-height: 16px;
+    }
+    .sa__team-icon{
+        width: 26px;    
+    }
+    .teamwrapper{
+        max-width: 1600px;
     }
 
     .sa__servies-gridwrap{
@@ -1698,7 +1754,6 @@ line-height: 60px;
     .sa__ourservices  {
         padding-top: 100px;
     }
-
 }
 
 @media(min-width:1361px){
@@ -1723,6 +1778,7 @@ line-height: 60px;
     .sa__ourmission-aim .t2 {
         margin-bottom: 30px;
     }
+
 }
 
 /* HEADER STYLES */
@@ -1885,7 +1941,7 @@ line-height: 60px;
 .sa__gallery-wrapper{
     position: relative;
     background-color: var(--clr3) ;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .sa__gallery-wrapper .grid_square1 {
