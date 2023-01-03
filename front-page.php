@@ -36,8 +36,8 @@ get_header();
 
 <!-- todo : welcome to  -->
 
-<section class="sa__main">
-<div class="sa__welcometosri">
+
+<section class="sa__welcometosri">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-topImage"/>
 
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__welcome-img"/>
@@ -82,7 +82,7 @@ get_header();
 
         </div>
     </div>
-</div>
+
 </section>
 
 <!-- todo : what we aim  -->
@@ -283,8 +283,9 @@ get_header();
                     <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */ font-size: 22px; margin-bottom: 13px;  line-height: 33px; ">Our Guarantee</p>
 
                     <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> We are a part of Batgach</h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/batgatch.png" class="sa__batgatch-img"/>
                 </div>
-
+                
               
             </div>
 
