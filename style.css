@@ -58,7 +58,7 @@ src: url(fonts/Wes-FY-Regular.ttf);
 /* Containers Sizes */
 .contentwrapper {
     /* width: 100%; */
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0px 20px;
 }
@@ -304,12 +304,12 @@ button{
 
 .sa__welcometosri{
     padding:55px 0;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .sa__welcome-img,.sa__welcome-topImage{
-    width: 120px;
-    height: 120px;
+        width: 150px;
+        height: 150px;
     position: absolute;
     display: none;
     bottom: 0;
@@ -317,12 +317,12 @@ button{
 }
 .sa__welcome-topImage{
     top:0;
-    left:calc(40% - 170px);
+    left:calc(40% - 110px);
 
 }
 .contentwrapper2{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
@@ -350,10 +350,7 @@ button{
     font-family: var(--font1);
     letter-spacing: 0px;
     color: var(--blk1);
-    opacity: 1;
-    font-size: 16px;
-    line-height: 26px;
-    
+    opacity: 1;    
 }
 
 .sa__welcome-wrapper #mesh1 , 
@@ -388,11 +385,27 @@ button{
 .sa__about-img {
     position: absolute;
     top:-104px;
-    width: 19%;
+    width: 17%;
     object-fit: contain;
     right: 68%;
-    max-height: 210px;
+    max-height: 140px;
     display: none;
+
+}
+@media(min-width:1200px){
+    .sa__about-img {
+        width:19%;
+        max-height: 172px;
+
+    }
+}
+@media(min-width:1450px){
+
+    .sa__about-img {
+       
+        max-height: 210px;
+
+    }
 
 }
 .sa__about-textcontent1 .sa__about-right ,
@@ -430,10 +443,10 @@ button{
 
 .sa__ourmission-aim .t1 {
     font-family: var(--font1);
-font-size: 22px;
+
 color: var(--blk1);
 letter-spacing: 0px;
-line-height: 60px;
+
 border-bottom: 2px solid var(--wine);
 text-transform: capitalize;
 }
@@ -442,8 +455,7 @@ text-transform: capitalize;
     font-family: var(--font3);
     color: var(--wine);
     text-align: left;
-    font-size: 45px;
-    line-height: 60px;
+    margin-top: 8px;
     font-weight: 600;
     padding-bottom: 22px;
 }
@@ -480,8 +492,6 @@ margin-right:8px;
 .sa__ourservices .sa__p1 {
     color: var(--blk1);
     border-bottom: 2px solid var(--wine);
-    font-size: 22px;
-    line-height: 1.5;
     width:fit-content;
     font-family: var(--font1);
     margin: 0 auto;
@@ -503,7 +513,7 @@ margin-right:8px;
     width: 55vw;
     margin: 0 auto;
     font-family: var(--font1) ;
-    line-height: 1.5;
+
     color: var(--blk1);
 }
 
@@ -657,8 +667,6 @@ margin-right:8px;
 .sa__about-textcontent2  .textblock1  {
     font-family: var(--font1);
     font-style :normal ;
-    font-size:16px;
-    line-height: 22px;
     margin:50px 0;
     padding:0;
     width:100%;
@@ -671,6 +679,7 @@ margin-right:8px;
 .sa__about-textcontent2 .image1{
     width: 100%;
     height: 100% ;
+    object-fit: cover;
 }
 
 
@@ -683,10 +692,10 @@ margin-right:8px;
 
 .sa__ourmission-aim .t1 {
     font-family: var(--font1);
-font-size: 16px;
+
 color: var(--blk1);
 letter-spacing: 0px;
-line-height: 32px;
+
 border-bottom: 2px solid var(--wine);
 text-transform: capitalize;
 }
@@ -695,8 +704,7 @@ text-transform: capitalize;
     font-family: var(--font3);
     color: var(--wine);
     text-align: left;
-    font-size: 30px;
-    line-height: 45px;
+    
     font-weight: 600;
     padding-bottom: 22px;
 }
@@ -766,6 +774,9 @@ text-transform: capitalize;
 }
 
 /* Gallery Slider */
+.gallery-about .splide__track{
+    max-width: 1340px;
+}
 .sa__gallery-sqaure{
     display: none;
 }
@@ -779,6 +790,7 @@ text-transform: capitalize;
 .sa__gallery-wrapper .gallery__img img{
     width:100%;
     height:100%;
+    padding:0 10px;
     object-fit: contain;
 }
 .sa__gallery-wrapper .slick-list{
@@ -1169,7 +1181,7 @@ text-transform: capitalize;
 
 
     .sa__welcome-wrapper .block1 {
-        width: 35%;
+        width: 52%;
 
         margin-bottom: 0;;
         }
@@ -1269,7 +1281,11 @@ text-transform: capitalize;
     .sa__about-textcontent1 .sa__about-right ,
     .sa__about-textcontent2 .sa__about-left  {
         width: 50%;
-        height:420px;
+        height:520px;
+
+}
+     .sa__about-textcontent2 {
+        margin-top: 75px;
 
 }
 /* .sa__about1wrapper{
@@ -1278,12 +1294,10 @@ text-transform: capitalize;
 
     .sa__about-textcontent1  .textblock1 ,
     .sa__about-textcontent2  .textblock1  {
-        font-size:16px;
-        line-height: 22px;
         min-width:300px;
         padding: 0px 30px 0px 0;
         width: 50%;
-        margin-top: 50px;
+        margin: 0px;
     }
     .sa__about-textcontent1 .textblock1 {
         padding-right:40px;
@@ -1301,14 +1315,8 @@ text-transform: capitalize;
     position: relative;
 }
 
-.sa__ourmission-aim .t1 {
-font-size: 22px;
-line-height: 60px;
-}
 
 .sa__ourmission-aim .t2 {
-    font-size: 45px;
-    line-height: 60px;
     padding-bottom: 22px;
     margin-bottom:25px;
 }
@@ -1419,23 +1427,16 @@ margin-right:8px;
 /* Contact Page */
 
 }
-@media(min-width:800px){
 
-    .sa__about-textcontent1, .sa__about-textcontent2 {
-        margin-top: 50px;
-
-    }
-
-}
 @media screen and (min-width:992px){
     .contentwrapper{
         padding:0 5%;
     }
-    .sa__welcome-wrapper .block2 ,.sa__welcome-wrapper .block1{
+    .sa__welcome-wrapper .block2 {
         padding: 0px 20px;
     }
     .sa__welcometosri{
-        padding:34px 0;
+        padding:66px 0;
     }
     .sa__navmenu .custom-logo{
         width: 320px;
@@ -1489,9 +1490,7 @@ margin-right:8px;
 
      /* What we do  */
 
-     .sa__ourservices .sa__h3 {
-        font-size: 48px;
-     }
+
 
      .sa__banner-h1{
         font-size: 48px;
@@ -1565,12 +1564,6 @@ margin-right:8px;
    
 }
 
-.sa__about-textcontent1  .textblock1 ,
-.sa__about-textcontent2  .textblock1  {
-    font-size:16px;
-    line-height: 22px;
- 
-}
 
 .sa__ourmission{
     padding-top: 0px;
@@ -1580,24 +1573,17 @@ margin-right:8px;
     font-size:18px;
 }
 
-.sa__ourmission-aim .t1 {
-font-size: 22px;
-line-height: 60px;
-
-}
-
 .sa__ourmission-aim .t2 {
-    font-size: 48px;
-    line-height: 60px;
+   
     padding-bottom: 22px;
-    margin-bottom: 40px;
+ 
 }
 
 
 .sa__ourmission-aim .t__3{
     padding-bottom: 20px;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 19px;
+    line-height: 28px;
 }
 
 .sa__ourmission-aim .t__3 span{
@@ -1667,9 +1653,7 @@ line-height: 60px;
     .contentwrapper2{
         padding:0 5%;
     }
-    .sa__welcometosri{
-        padding:0;
-    }
+
     .sa__welcome-img,.sa__welcome-topImage{
         display: block;
     }
@@ -1677,9 +1661,10 @@ line-height: 60px;
         width: 87%;
         margin:auto;
     }
-    .sa__welcome-wrapper .block1 {
-        height:430px;
-        }
+    .sa__welcometosri{
+        padding:90px 0;
+
+    }
     .sa__batgatch-img{
         width: 135px;
     }   
@@ -1702,11 +1687,14 @@ line-height: 60px;
     .sa__about-textcontent1 .sa__about-right ,
     .sa__about-textcontent2 .sa__about-left {
         width: 45%;
-        height:500px;
+       height:600px;
     }
 
     .sa__about-leftImage,.sa__about-rightImage{
         display: block;
+    }
+    .sa__gallery-wrapper .gallery__img img{
+        padding:0 23px;
     }
     .sa__gallery-sqaure{
         position: absolute;
@@ -1721,6 +1709,7 @@ line-height: 60px;
 
     .sa__ourmission-aim .t2 {
         margin-bottom: 8px;
+        margin-top:12px;
     }
     
     .sa__ourmission-wrap{
@@ -1730,7 +1719,7 @@ line-height: 60px;
         width:48%;
     }
     .sa__ourmission .sa__ourmission-aim {
-        padding: 30px 10px 75px 20px;
+        padding: 30px 10px 75px 4%;
         width:52%;
     }
     .sa__ourmission .sa__ourmission-image{
@@ -1772,21 +1761,7 @@ line-height: 60px;
     }
 }
 
-@media(min-width:1361px){
-    .sa__ourmission-aim .t__3{
-        padding-bottom: 20px;
-        font-size: 24px;
-        line-height: 34px;
-    }
-    .sa__welcome-img,.sa__welcome-topImage{
-        width: 150px;
-        height: 150px;
-    }
-    .sa__welcome-topImage{
-        left:calc(40% - 220px);
-    
-    }
-}
+
 
 @media screen and (min-width:1200px) {
   .sa__addresswrapper , .sa__contactdetails-wrap{ 
@@ -1796,11 +1771,20 @@ line-height: 60px;
 
 @media(min-width:1400px){
     .sa__ourmission .sa__ourmission-aim {
-        padding:50px 10px 75px 50px;
+        padding:50px 10px 75px 7%;
     }
 
     .sa__ourmission-aim .t2 {
         margin-bottom: 30px;
+    }
+    .sa__welcome-topImage{
+        left:calc(40% - 140px);
+    
+    }
+    .sa__ourmission-aim .t__3{
+        padding-bottom: 20px;
+        font-size:22px;
+        line-height: 32px;
     }
 
 }
@@ -1884,7 +1868,7 @@ line-height: 60px;
 
 /* Services */
 
-#grid1 , #grid2 , #grid3 , #grid4{
+#grid, #grid2 , #grid3 , #grid4{
     position: absolute;
     z-index: -1;
 }
@@ -2026,3 +2010,49 @@ line-height: 60px;
 
 
 /* About Page */
+
+
+/* Font sizes */
+
+/*Main Headings*/
+
+.main-heading{
+
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+
+}
+@media(min-width:768px){
+    .main-heading{
+        font-size: 26px;
+        line-height: 34px;
+    }
+}@media(min-width:992px){
+    .main-heading{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+@media(min-width:1025px){
+    .main-heading{
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+@media(min-width:1450px){
+    .main-heading{
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+.paragraphs{
+    font-size:16px;
+    line-height: 27px;
+}
+@media(min-width:992px){
+    .paragraphs{
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
