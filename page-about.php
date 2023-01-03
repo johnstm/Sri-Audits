@@ -22,7 +22,7 @@ get_header();
 
 <?php   get_template_part('template-parts/main-banner') ; ?>
 
-<p class="sa__about-who">Who we are</p>
+<p class="sa__about-who main-heading">Who we are</p>
 
 
 
@@ -32,7 +32,7 @@ get_header();
 <div class="contentwrapper">
     <div class="sa__about-textcontent1">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two.jpg" class="sa__about-img"/>
-        <div class="textblock1">
+        <div class="textblock1 paragraphs">
             <?php  $textcontent1 = get_field('text_block_1') ;
                     if($textcontent1)
                       echo $textcontent1 ; 
@@ -53,7 +53,7 @@ get_header();
 <div class="contentwrapper">
     <div class="sa__about-textcontent2">
  
-        <div class="textblock1">
+        <div class="textblock1 paragraphs">
             <?php  $textcontent2 = get_field('text_block_2') ;
                     if($textcontent2)
                       echo $textcontent2 ; 
@@ -79,9 +79,9 @@ get_header();
             <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
         </div>
         <div class="sa__ourmission-aim">
-            <span class="t1">What We aim</span> 
+            <span class="t1 paragraphs">What We aim</span> 
        
-            <p class="t2">Our Mission </p>
+            <p class="t2 main-heading">Our Mission </p>
            
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__ourmission-sqaure" />
          
@@ -111,7 +111,7 @@ get_header();
 <!-- Our Team -->
 
 <section class="sa__our-team">
-        <h3 class="sa__about-who team__h3" >Our Team</h3>
+        <h3 class="sa__about-who team__h3 main-heading" >Our Team</h3>
 
         <div class="contentwrapper sa__teammembers-wrapper">
             
@@ -171,7 +171,7 @@ get_header();
 
 <section class="sa__gallery-wrapper">
     
-    <p class="sa__about-who"> Gallery </p>
+    <p class="sa__about-who main-heading"> Gallery </p>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__gallery-sqaure" />
     <div class="contentwrapper">
 

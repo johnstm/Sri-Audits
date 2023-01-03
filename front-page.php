@@ -59,16 +59,16 @@ get_header();
             <div class="block1">
 
                 <div class="sa__welcome-textwrap">
-                    <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */ font-size: 22px; margin-bottom: 13px;  line-height: 33px; ">About Us</p>
+                    <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */  margin-bottom: 13px;  "class="paragraphs">About Us</p>
 
-                    <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> Welcome to Sridhar & Co Chartered Associates</h2>
+                    <h2 style="font-family: var(--font3);color: var(--wine);" class="main-heading"> Welcome to Sridhar & Co Chartered Associates</h2>
                 </div>
 
               
             </div>
 
             <div class="block2">
-                <p >
+                <p class="paragraphs">
                     <?php $welcometext = 'CA R. Sridhar qualified in 1987, commenced practice in Trivandrum. Later in 1988 he established a firm of Chartered Accountants with its head quarters at Thiruvananthapuram under the name and style of Sri Narayan Associates. In 2004. the name of the firm was changed to Sridhar & Co. 
                     <br><br>
                     We provide all services except public issue of shares and listing of companies and we look forward for an opportunity to extend our experience to these areas also. 
@@ -97,9 +97,9 @@ get_header();
             <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
         </div>
         <div class="sa__ourmission-aim">
-            <span class="t1">What We aim</span> 
+            <span class="t1 paragraphs">What We aim</span> 
        
-            <p class="t2">Our Mission </p>
+            <p class="t2 main-heading" >Our Mission </p>
            
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__ourmission-sqaure" />
          
@@ -134,11 +134,11 @@ get_header();
 
  <div class="sa__p1"> What we do</div>
 
- <h3 class="sa__h3">
+ <h3 class="sa__h3 main-heading">
    Our Services
  </h3>
 
- <p class="sa__p-subtext">
+ <p class="sa__p-subtext paragraphs">
  We have a well equipped team of professionals assisted with other professionals like CWA,<br> MBA and articled clerks, audit trainees and other staff.
  <p>
 
@@ -172,7 +172,7 @@ get_header();
 
 <section class="sa__gallery-wrapper">
     
-    <p class="sa__about-who"> Our Team </p>
+    <p class="sa__about-who main-heading"> Our Team </p>
     
     <div class="contentwrapper teamwrapper">
 
@@ -280,9 +280,9 @@ get_header();
 
             <div class="block1">
                 <div class="sa__welcome-textwrap">
-                    <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */ font-size: 22px; margin-bottom: 13px;  line-height: 33px; ">Our Guarantee</p>
+                    <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */  margin-bottom: 13px; " class="paragraphs">Our Guarantee</p>
 
-                    <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> We are a part of Batgach</h2>
+                    <h2 style="font-family: var(--font3);color: var(--wine);" class="main-heading"> We are a part of Batgach</h2>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/batgatch.png" class="sa__batgatch-img"/>
                 </div>
                 
@@ -290,7 +290,7 @@ get_header();
             </div>
 
             <div class="block2">
-                <p >
+                <p class="paragraphs">
                     <?php $welcometext = 'Batgach is a network of Chartered Accountants firms in major cities of India. Batgach is one of the first network approved by ICAI, India. The founding principle of Batgach is standardization of Professional Work. 
                     <br><br>
                     The foundation of Batgach has ethical standards and timeliness in execution. Batgach & Affiliates – an network approved by Institute of Chartered Accountants of India has a presence across sixteen cities in India. 
