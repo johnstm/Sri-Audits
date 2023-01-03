@@ -178,79 +178,37 @@ get_header();
 
         <div class="splide__track">
             <div class="splide__list">
-                <!-- <?php
+                 <?php
                     $i=1 ;
 
                     while(true){
-                        $slide = get_field("gallery_slide_$i");
-                        
-                        if(!$slide){
+                        $name = get_field("memname_$i");
+                        $designation = get_field("memdes_$i");
+                        $m_image =  get_field("memicon_$i");
+                        $iconpath = get_template_directory_uri().'/assets/images/member-icon.png'; 
+
+                        if(!$name || !$designation){
                             break;
                         }
 
-                        echo '<div class="gallery__img">'.
-                             '<img src="'.$slide["url"].'" alt="'.$slide["alt"].'" class="gallery__imgslide" >'.
-                             '</div>';
+                        $placeholder_icon ; 
 
+                        if($m_image)
+                        $placeholder_icon = $m_image['url'];
+                        else
+                        $placeholder_icon = $iconpath ;
+
+                        echo '<div class="sa__team-member">
+                                <img src="'.$placeholder_icon.'" class="sa__team-icon"/>
+                                <div class="sa__team-details">
+                                    <h4>'.$name.'</h4>
+                                    <h6>'.$designation.'</h6>
+                                </div>
+                             </div>
+                             ';
                         $i++ ;
                     }
-                ?> -->
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Sridhar</h4>
-                        <h6> B.Com.FCA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Srinivasan </h4>
-                        <h6> B.Com.FCA, DISA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. I. Jayasindhu </h4>
-                        <h6> B.Com.FCA, DISA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Sripriya </h4>
-                        <h6> B.Com.FCA, Grad.CWA</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Sridhar</h4>
-                        <h6> B.Com.FCA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Srinivasan </h4>
-                        <h6> B.Com.FCA, DISA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. I. Jayasindhu </h4>
-                        <h6> B.Com.FCA, DISA (Partner)</h6>
-                </div>
-                </div>
-                <div class="sa__team-member">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/member-icon.png" class="sa__team-icon"/>
-                    <div class="sa__team-details">
-                        <h4>CA. R. Sripriya </h4>
-                        <h6> B.Com.FCA, Grad.CWA</h6>
-                </div>
-                </div>
+                ?> 
             </div>
         </div>
 
@@ -285,8 +243,6 @@ get_header();
                     <h2 style="font-family: var(--font3);font-size: 30px;line-height: 36px;color: var(--wine);"> We are a part of Batgach</h2>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/batgatch.png" class="sa__batgatch-img"/>
                 </div>
-                
-              
             </div>
 
             <div class="block2">
@@ -359,11 +315,7 @@ var settings = {
 ]
 };
 
-
 $carousel.slick(settings);
-
-
-
 
 </script>
 <?php
