@@ -169,7 +169,7 @@ get_header();
 
 </section>
 
-<section class="sa__gallery-wrapper">
+<section class="sa__gallery-wrapper gallery-about">
     
     <p class="sa__about-who main-heading"> Gallery </p>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__gallery-sqaure" />
@@ -229,7 +229,14 @@ var settings = {
 
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1300,
+      settings: {
+        
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 992,
       settings: {
         
         slidesToShow: 3

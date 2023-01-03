@@ -58,7 +58,7 @@ src: url(fonts/Wes-FY-Regular.ttf);
 /* Containers Sizes */
 .contentwrapper {
     /* width: 100%; */
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0px 20px;
 }
@@ -304,7 +304,7 @@ button{
 
 .sa__welcometosri{
     padding:55px 0;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 .sa__welcome-img,.sa__welcome-topImage{
@@ -322,7 +322,7 @@ button{
 }
 .contentwrapper2{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
@@ -390,6 +390,22 @@ button{
     right: 68%;
     max-height: 140px;
     display: none;
+
+}
+@media(min-width:1200px){
+    .sa__about-img {
+        width:19%;
+        max-height: 172px;
+
+    }
+}
+@media(min-width:1450px){
+
+    .sa__about-img {
+       
+        max-height: 210px;
+
+    }
 
 }
 .sa__about-textcontent1 .sa__about-right ,
@@ -758,6 +774,9 @@ text-transform: capitalize;
 }
 
 /* Gallery Slider */
+.gallery-about .splide__track{
+    max-width: 1340px;
+}
 .sa__gallery-sqaure{
     display: none;
 }
@@ -771,6 +790,7 @@ text-transform: capitalize;
 .sa__gallery-wrapper .gallery__img img{
     width:100%;
     height:100%;
+    padding:0 10px;
     object-fit: contain;
 }
 .sa__gallery-wrapper .slick-list{
@@ -1556,14 +1576,14 @@ margin-right:8px;
 .sa__ourmission-aim .t2 {
    
     padding-bottom: 22px;
-    margin-bottom: 40px;
+ 
 }
 
 
 .sa__ourmission-aim .t__3{
     padding-bottom: 20px;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 19px;
+    line-height: 28px;
 }
 
 .sa__ourmission-aim .t__3 span{
@@ -1673,6 +1693,9 @@ line-height: 60px;
     .sa__about-leftImage,.sa__about-rightImage{
         display: block;
     }
+    .sa__gallery-wrapper .gallery__img img{
+        padding:0 23px;
+    }
     .sa__gallery-sqaure{
         position: absolute;
         top: -122px;
@@ -1696,7 +1719,7 @@ line-height: 60px;
         width:48%;
     }
     .sa__ourmission .sa__ourmission-aim {
-        padding: 30px 10px 75px 20px;
+        padding: 30px 10px 75px 4%;
         width:52%;
     }
     .sa__ourmission .sa__ourmission-image{
@@ -1737,25 +1760,8 @@ line-height: 60px;
         padding-top: 100px;
     }
 }
-@media(min-width:1200px){
-    .sa__about-img {
-        width:19%;
-        max-height: 170px;
 
-    }
-}
-@media(min-width:1361px){
-    .sa__ourmission-aim .t__3{
-        padding-bottom: 20px;
-        font-size: 24px;
-        line-height: 34px;
-    }
-    .sa__welcome-topImage{
-        left:calc(40% - 125px);
-    
-    }
 
-}
 
 @media screen and (min-width:1200px) {
   .sa__addresswrapper , .sa__contactdetails-wrap{ 
@@ -1765,11 +1771,20 @@ line-height: 60px;
 
 @media(min-width:1400px){
     .sa__ourmission .sa__ourmission-aim {
-        padding:50px 10px 75px 50px;
+        padding:50px 10px 75px 7%;
     }
 
     .sa__ourmission-aim .t2 {
         margin-bottom: 30px;
+    }
+    .sa__welcome-topImage{
+        left:calc(40% - 140px);
+    
+    }
+    .sa__ourmission-aim .t__3{
+        padding-bottom: 20px;
+        font-size:22px;
+        line-height: 32px;
     }
 
 }
@@ -2012,6 +2027,11 @@ line-height: 60px;
     .main-heading{
         font-size: 26px;
         line-height: 34px;
+    }
+}@media(min-width:992px){
+    .main-heading{
+        font-size: 28px;
+        line-height: 36px;
     }
 }
 @media(min-width:1025px){
