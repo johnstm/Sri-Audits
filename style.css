@@ -308,8 +308,8 @@ button{
     margin: 0 auto;
 }
 .sa__welcome-img,.sa__welcome-topImage{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     display: none;
     bottom: 0;
@@ -317,7 +317,7 @@ button{
 }
 .sa__welcome-topImage{
     top:0;
-    left:calc(40% - 220px);
+    left:calc(40% - 170px);
 
 }
 .contentwrapper2{
@@ -374,6 +374,13 @@ button{
     bottom:0px ;
     left: 0px;
 }
+.sa__batgatch-img{
+    width: 115px;
+    object-fit: contain;
+    margin-top: 7px;
+    margin-left: -5px;
+}
+
 
 .sa__welcome-wrapper .sa__welcome-textwrap {
 
@@ -1055,6 +1062,11 @@ text-transform: capitalize;
         padding-right:20px;
         
     }
+    .sa__welcome-wrapper .block2 {
+
+        padding-left:20px;
+        
+    }
     .contentwrapper2{
         padding: 0 40px;
     }
@@ -1129,11 +1141,8 @@ text-transform: capitalize;
     }
     
     /* Welcome to Sri audit */
-    .sa__main{
-        position: relative;
-    }
     .sa__welcometosri {
-        
+        position: relative;
         padding:68px 0;
     }
 
@@ -1664,9 +1673,16 @@ line-height: 60px;
     .sa__welcome-img,.sa__welcome-topImage{
         display: block;
     }
+    .sa__welcome-wrapper{
+        width: 87%;
+        margin:auto;
+    }
     .sa__welcome-wrapper .block1 {
         height:430px;
         }
+    .sa__batgatch-img{
+        width: 135px;
+    }   
     .sa__about-img {
         display: block;
     }
@@ -1761,6 +1777,14 @@ line-height: 60px;
         padding-bottom: 20px;
         font-size: 24px;
         line-height: 34px;
+    }
+    .sa__welcome-img,.sa__welcome-topImage{
+        width: 150px;
+        height: 150px;
+    }
+    .sa__welcome-topImage{
+        left:calc(40% - 220px);
+    
     }
 }
 
