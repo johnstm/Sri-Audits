@@ -1804,7 +1804,9 @@ line-height: 60px;
 
 .sa__footer{
     padding:58px 0px 92px 0px ;
-    background:  #74000D url("http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/footerbg.jpg") no-repeat  ;
+    background:  #74000D url("./assets/images/footerbg.jpg") no-repeat  ;
+    background-position: left;
+    background-size: cover;
 }
 
 .sa__footer-items {
@@ -1835,6 +1837,10 @@ line-height: 60px;
     justify-content: space-between;
 }
 @media screen and (min-width:768px){
+    .sa__footer{
+        background-size: cover;
+    }
+
     .sa__reserved{ 
         font-size: 20px;
         line-height: 33px; 
@@ -1852,9 +1858,9 @@ line-height: 60px;
 }
 
 @media screen and (min-width:768px){
-#footersubmenu-1{
-    margin-right: 120px;
-}
+    #footersubmenu-1{
+        margin-right: 120px;
+    }
 }
 .sa__footer-items  address {
     font-style: normal;
@@ -1862,6 +1868,12 @@ line-height: 60px;
 
 .sa__footer-items  ul {
     list-style-type: none;
+}
+
+@media screen and (min-width:992px){
+    .sa__footer{
+        background-position: center;
+    }
 }
 
 /* FOOTER */
