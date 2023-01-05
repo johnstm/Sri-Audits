@@ -132,7 +132,7 @@ get_header();
  <img class="mesh mesh2" src="<?php echo get_template_directory_uri() . '/assets/images/meshservice.png';   ?>">
 
 
- <div class="sa__p1"> What we do</div>
+ <div class="sa__p1 paragraphs"> What we do</div>
 
  <h3 class="sa__h3 main-heading">
    Our Services

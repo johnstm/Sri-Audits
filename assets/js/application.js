@@ -36,21 +36,26 @@ function openCloseMenu(){
 
 // accordion open statements
 function repeat1(){
-  activeAccordion.style.alignItems = 'flex-start';
-  activeAccordion.style.marginTop = '30px' ;
+  
+  activeAccordion.style.marginTop = '0px' ;
+  plusicon.style.marginTop='11px';
   subtext.classList.remove('d-none');
   plusicon.classList.add('sa__plusicon--tilt');
-  plusicon.nextSibling.parentNode.style.alignItems = 'flex-start';
+  contact.style.height="auto";
+  contact.style.visibility="visible";
 }
 
 
 //accordion close statements
 function repeat2(){
-  activeAccordion.style.alignItems = 'center'; 
+
   activeAccordion.style.marginTop = '0px' ;
+  plusicon.style.marginTop='8px';
   subtext.classList.add('d-none');
   plusicon.classList.remove('sa__plusicon--tilt') ;
-  plusicon.nextSibling.parentNode.style.alignItems = 'center';
+  contact.style.height="0";
+  contact.style.visibility="hidden";
+
 }
 
 function accordion_active(e){
@@ -59,14 +64,15 @@ function accordion_active(e){
          activeAccordion = document.getElementById(`layer-${e}`);
          subtext = document.getElementById(`subtext-${e}`) ;
          plusicon = document.getElementById(`plusicon-${e}`);
+         contact=document.querySelector(`#layer-${e} .sa__service-accordion a `);
          repeat1();
     }
 
     else{
         if(activeAccordion == document.getElementById(`layer-${e}`)){
 
-          if(activeAccordion.style.alignItems == 'center'){
-
+          if(plusicon.style.marginTop == '8px'){
+        
             repeat1();  
 
           }else{
