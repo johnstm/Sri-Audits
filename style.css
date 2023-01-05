@@ -971,22 +971,18 @@ text-transform: capitalize;
     padding: 40px 0px 16px;
     font-family:var(--font3);
     color: var(--wine);
-    font-size:28px;
-    line-height:32px;
+   
     text-align:center;
 }
 
-.sa__addresswrapper , .sa__contactdetails-wrap{
-    margin: 0 auto;
-    padding:0px 20px;
-}
 
 .sa__directions-place{
     font-family: var(--font2);
     color: var(--blk1);
     letter-spacing: 0px;
-    margin-bottom: 0;
-    margin-top: 12px;
+    margin-bottom: 0 !important;
+    margin-top: 6px;
+
 }
 
 .sa__directions-place img {
@@ -1008,14 +1004,8 @@ text-transform: capitalize;
     margin-left: 5px;
 }
 
-.sa__directions-place--url:hover {
-    text-decoration: underline;
-}
-
 .sa__directions-address{
-
-    font-size: 16px;
-    line-height: 24px;
+    
     font-family: var(--font1);
     color: #4B4B4B ; 
     font-style: normal;
@@ -1027,13 +1017,39 @@ text-transform: capitalize;
     padding-bottom: 30px;
 
 }
+.sa__addresswrapper , .sa__contactdetails-wrap{
+    margin: 0 auto;
+    padding:0px 20px;
+    display: none;
 
+}
+.sa__addresswrapper-mobile{
+    display: block;
+    max-width: 600px;
+}
+.sa__addresswrapper-mobile .sa__directions-wrapper{
+    flex-direction: column;
+   
+}
+.sa__addresswrapper-mobile .card__location{
+    margin-bottom: 10px;
+}
+.sa__addresswrapper-mobile .sa__contact-number{
+    margin-top: 15px;
+}
+.sa__addresswrapper-mobile .card{
+    padding:22px 0;
+    border-bottom: 2px solid #C0C0C0;
+}
 .sa__directions-wrapper .card {
     padding-bottom: 22px;
 }
 
 .sa__directions-wrapper .card:last-child{
     border-bottom: none;
+}
+.card:last-child{
+    padding-right:0 !important;
 }
 
 /* .slick-initialized  .slick-active .gallery__imgslide{
@@ -1059,7 +1075,7 @@ text-transform: capitalize;
 }
 
 .sa__contact-phone img , .sa__contact-email img {
-    width: 32px;
+    object-fit: contain;
     height: 32px;
     padding-right: 12px;
 }
@@ -1227,36 +1243,19 @@ text-transform: capitalize;
 
         /*  Our Services  */
 
-    .sa__touch{
-        padding: 100px 0px;
-        font-size: 48px;
-        line-height: 60px;
-    }
-
-    .sa__addresswrapper , .sa__contactdetails-wrap{
-        padding: 0px;
-        max-width: 700px;
-    }
-
     .sa__directions-wrapper,.sa__contactdetails-wrap{
 
         padding-bottom: 33px;
     }
-
-
-    .sa__directions-contact{
-
+    .sa__directions-place img {
+        width: 8px;
+        height: 8px;
     }
 
-    .sa__contact-phone{
-        font-size: 19px;
-        line-height: 25px;
-    }
-    
     .sa__contact-phone img , .sa__contact-email img {
-        width: 26px;
+       
         height: 26px;
-        padding-right: 16px;
+
     }
 
     /* .sa__directions-contact-wrapper  */
@@ -1268,8 +1267,7 @@ text-transform: capitalize;
     }
     .sa__about-who{
         margin: 54px auto 40px auto;
-        font-size:30px;
-        line-height:38px;
+     
 }
     .sa__about-textcontent1,.sa__about-textcontent2 {
   
@@ -1499,32 +1497,33 @@ margin-right:8px;
         line-height: 33px;
     }
    
+    .sa__touch{
+        padding: 75px 0px;
+        
+        line-height: 60px;
+    }
+
     .sa__directions-pin {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
-
-
-
-
-    .sa__contact-phone{
-        font-size: 19px;
-        line-height: 25px;
-    }
-    
     .sa__contact-phone img , .sa__contact-email img {
-        width: 26px;
-        height: 26px;
-        margin-right: 16px;
+        height:35px;
     }
 
 
     .sa__addresswrapper , .sa__contactdetails-wrap{
-        max-width: 1300px;
+        max-width: 1400px;
         padding: 0 5%;
         display: flex;
         margin: 0 auto;
+       
     }
+    
+    .sa__addresswrapper-mobile{
+        display: none;
+    }
+
     .sa__directions-wrapper .card,.sa__contactdetails-wrap .card{
         padding:0;
         width:33%;
@@ -1535,7 +1534,12 @@ margin-right:8px;
         padding-bottom:70px;
     }
 
-    
+    .sa__directions-place{
+        margin-top:12px;
+    }
+    .card__location address{
+        padding-right:20%;
+    }
 
 
 /* About PAge */
@@ -1750,13 +1754,6 @@ line-height: 60px;
     }
 }
 
-
-
-@media screen and (min-width:1200px) {
-  .sa__addresswrapper , .sa__contactdetails-wrap{ 
-    width:  85% ;
-  }
-}
 
 @media(min-width:1400px){
     .sa__ourmission .sa__ourmission-aim {
