@@ -77,7 +77,7 @@ get_header();
                            </p>
 
                            <p id="subtext-'.$i.'" class="d-none sa__service-accordion-text sa__subtitle paragraphs">'.$serviceSubtext.'</p>
-                           <a href="/contact-us"><div class="sa__contact-main">
+                           <a href="/contact-us" class="d-none"><div class="sa__contact-main ">
                            <p class="sa__service-accordion-text paragraphs sa__contact">Contact Us
                            </p>
                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png"/>

@@ -954,8 +954,7 @@ text-transform: capitalize;
  }
  .sa__contact-main{
     display: flex;
-    height:0;
-    visibility: hidden;
+
     align-items: center;
  }
  .sa__contact-main img{
