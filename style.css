@@ -846,7 +846,7 @@ text-transform: capitalize;
     align-items: center;
 
 }
-.sa__team-details h4{
+.sa__team-details h4,.sa__directions-place,.sa__contact-email{
     font-size: 16px;
     line-height: 16px;
     color:#2D2D2D;
@@ -985,9 +985,8 @@ text-transform: capitalize;
     font-family: var(--font2);
     color: var(--blk1);
     letter-spacing: 0px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 12px;
 }
 
 .sa__directions-place img {
@@ -1014,8 +1013,7 @@ text-transform: capitalize;
 }
 
 .sa__directions-address{
-    padding-top: 10px;
-    padding-bottom: 12px;
+
     font-size: 16px;
     line-height: 24px;
     font-family: var(--font1);
@@ -1023,16 +1021,14 @@ text-transform: capitalize;
     font-style: normal;
 }
 
-.sa__directions-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 22px;
+.sa__directions-wrapper,.sa__contactdetails-wrap{
+    display: flex;
     border-bottom: 2px solid #C0C0C0;
     padding-bottom: 30px;
+
 }
 
 .sa__directions-wrapper .card {
-    border-bottom: 1px solid #cecece;
     padding-bottom: 22px;
 }
 
@@ -1048,9 +1044,9 @@ text-transform: capitalize;
 } */
 
 .sa__directions-wrapper .card .card__location {
-    display:flex; 
-    align-items:center; 
-    gap:12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 .sa__contact-phone{
@@ -1071,7 +1067,6 @@ text-transform: capitalize;
 
 .sa__contact-email{
     font-family: var(--font1) ;
-    font-size: 16px;
     color:  #4B4B4B;
     line-height: 25px;
     letter-spacing: 0px;
@@ -1243,21 +1238,11 @@ text-transform: capitalize;
         max-width: 700px;
     }
 
-    .sa__directions-wrapper{
-        grid-template-columns: repeat(3 ,minmax(auto,150px));
-        column-gap: 100px;
-        padding-bottom: 50px;
+    .sa__directions-wrapper,.sa__contactdetails-wrap{
+
+        padding-bottom: 33px;
     }
 
-    .sa__directions-place{
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .sa__directions-address{
-        font-size: 19px;
-        line-height: 25px;
-    }
 
     .sa__directions-contact{
 
@@ -1275,11 +1260,6 @@ text-transform: capitalize;
     }
 
     /* .sa__directions-contact-wrapper  */
-
-    .sa__contact-email , .sa__contact-phone , .sa__directions-address {
-        font-size: 20px ; 
-        line-height: 28px;
-    }
 
 
     /* About PAge */
@@ -1518,27 +1498,14 @@ margin-right:8px;
         font-size: 20px;
         line-height: 33px;
     }
- 
-    .sa__directions-wrapper , .sa__contactdetails-wrap {
-        grid-template-columns: repeat(3 ,minmax(auto,380px));
-       column-gap: 200px;
-    }
-    
    
     .sa__directions-pin {
         width: 70px;
         height: 70px;
     }
 
-    .sa__directions-place{
-        font-size: 24px;
-        line-height: 30px;
-    }
 
-    .sa__directions-address{
-        font-size: 19px;
-        line-height: 25px;
-    }
+
 
     .sa__contact-phone{
         font-size: 19px;
@@ -1553,14 +1520,23 @@ margin-right:8px;
 
 
     .sa__addresswrapper , .sa__contactdetails-wrap{
-        max-width:  1000px ;
+        max-width: 1300px;
+        padding: 0 5%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .sa__directions-wrapper .card,.sa__contactdetails-wrap .card{
+        padding:0;
+        width:33%;
+        padding-right:20px;
+    }
+    .sa__contactdetails-wrap{
+        padding-top:40px;
+        padding-bottom:70px;
     }
 
     
-    .sa__contact-email , .sa__contact-phone , .sa__directions-address{
-        font-size: 24px ; 
-        line-height: 45px;
-    }
+
 
 /* About PAge */
 
@@ -1749,7 +1725,7 @@ line-height: 60px;
         padding:48px 45px 48px 26px;
     
     }
-    .sa__team-details h4{
+    .sa__team-details h4,.sa__directions-place,.sa__contact-email{
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 10px;

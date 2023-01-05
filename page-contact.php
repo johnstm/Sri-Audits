@@ -60,25 +60,23 @@ get_template_part('template-parts/main-banner' );
                     <img class="sa__directions-pin" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Group-762.png" alt="map pin"  />
                     
                     <h6 class="sa__directions-place">'.$placeName.'</h6>
-                </div>
-
-                <address class="sa__directions-address ">
+                    <address class="sa__directions-address paragraphs ">
                     '.$addressVal.  '
-                    <a target="__blank" href="'.$directionsLink.'" class="d-md-none     sa__directions-place    sa__directions-place--url">
-                        &nbsp; Get Directions 
-                        <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Vector-1.png"  alt="arrow"/> 
-                    </a>
+      
                 </address>
  
-                <a target="__blank" href="'.$directionsLink.'" class="d-none d-md-block sa__directions-place    sa__directions-place--url">
-                        &nbsp; Get Directions 
+                </div>
+
+
+                <a target="__blank" href="'.$directionsLink.'" class="d-none d-md-block sa__directions-place    sa__directions-place--url paragraphs">
+                         Get Directions 
                         <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Vector-1.png"  alt="arrow"/> 
                 </a>
 
                 <div class="d-block d-md-none"> 
                     <div class="d-flex align-center sa__contact-phone">
                         <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Group-736.png" alt="phone"  class="" >
-                        <p class="">'.$phoneNumber.'</p>
+                        <p >'.$phoneNumber.'</p>
                     </div>
                     <div class="d-flex align-center sa__contact-email">
                         <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/Group-805.png" alt="email" class="" >
@@ -95,7 +93,7 @@ get_template_part('template-parts/main-banner' );
     </div>
 </div>
 
-    <div class="d-none  sa__contactdetails-wrap ">
+    <div class="  sa__contactdetails-wrap ">
         <?php 
             $i = 1; 
             while(true){
@@ -109,10 +107,10 @@ get_template_part('template-parts/main-banner' );
                     break;
                 }
                     echo '
-                        <div class="">
+                        <div class="card">
                             <div class="d-flex align-center sa__contact-phone">
                                 <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="phone"  class="" >
-                                <p class="">'.$phoneNumber.'</p>
+                                <p class="paragraphs">'.$phoneNumber.'</p>
                             </div>
                             <div class="d-flex align-center sa__contact-email">
                                 <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="email" class="" >
