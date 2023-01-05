@@ -115,56 +115,46 @@ get_header();
 
         <div class="contentwrapper sa__teammembers-wrapper">
             
-            <div class="sa__member-card">
-                <div class="sa__card-front">
-                    <img class="sa__member-img" alt="member" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/member1.jpg">
+             <?php
+                $i=1 ;
+                $plus_icon = get_template_directory_uri().'/assets/images/plus.png';  ; 
 
-                    <p class="sa__member-name">CA. R. Srinivasan</p>
-                    <p class="sa__member-degree">B.Com.FCA, DISA (Partner)</p>
+                while(true){
+                    $mem_img = get_field("cardimg_$i");
+                    $mem_name = get_field("cardname_$i");
+                    $mem_des = get_field("carddesignation_$i");
+                    $mem_content = get_field("card_contents_$i");
 
-                    <img  id="" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="click" class="sa__plusicon sa__cardexpand" width="20" height="20" >
-                </div>
+                    if(!$mem_img || !$mem_name || !$mem_des || !$mem_content){
+                        break;
+                    }
 
+                    echo 
+                    '<div class="sa__member-card">
+                        <div class="sa__card-front">
+                            <img class="sa__member-img" alt="member" src="'.$mem_img['url'].'">
+        
+                            <p class="sa__member-name">'.$mem_name.'</p>
+                            <p class="sa__member-degree">'.$mem_des.'</p>
+        
+                            <img  id="" src="'.$plus_icon.'" alt="click" class="sa__plusicon sa__cardexpand" width="20" height="20" >
+                        </div>
+    
+    
+                        <div class="d-none sa__card-contents">
+                            <p class="sa__member-name">'.$mem_name.'</p>
+                            <p class="sa__member-degree">'.$mem_des.'</p>
+        
+                            <p class="sa__member-bio">
+                                '.$mem_content.'
+                            </p>
+                        </div>
+                     </div>';
 
-                <div class="d-none sa__card-contents">
-                    <p class="sa__member-name">CA. R. Srinivasan</p>
-                    <p class="sa__member-degree">B.Com.FCA, DISA (Partner)</p>
-
-                    <p class="sa__member-bio">
-                         Bachelor of Commerce and Fellow member of Institute of Chartered Accountants of India.
-                    <br>
-                         Also qualified Intermediate of Cost and Works Accountancy and Diploma Holder in Public Relations & Advertising, Labour Laws and Administrative Laws.
-                    <br>
-                        Commenced practice as partner of M/s. Warrier & Warrier for a short period.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="sa__member-card">
-                <div class="sa__card-front">
-                    <img class="sa__member-img" alt="member" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/member1.jpg">
-
-                    <p class="sa__member-name">CA. R. Srinivasan</p>
-                    <p class="sa__member-degree">B.Com.FCA, DISA (Partner)</p>
-
-                    <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="click" class="sa__plusicon sa__cardexpand" width="20" height="20" >
-                </div>
-
-                <div class="d-none sa__card-contents">
-                    <p class="sa__member-name">CA. R. Srinivasan</p>
-                    <p class="sa__member-degree">B.Com.FCA, DISA (Partner)</p>
-
-                    <p class="sa__member-bio">
-                         Bachelor of Commerce and Fellow member of Institute of Chartered Accountants of India.
-                    <br>
-                         Also qualified Intermediate of Cost and Works Accountancy and Diploma Holder in Public Relations & Advertising, Labour Laws and Administrative Laws.
-                    <br>
-                        Commenced practice as partner of M/s. Warrier & Warrier for a short period.
-                    </p>
-                </div>
-            </div>
-
+                    $i++ ; 
+                }
+            ?>
+            
         </div>
 
 </section>
