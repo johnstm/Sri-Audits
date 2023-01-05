@@ -39,8 +39,7 @@ function repeat1(){
   plusicon.style.marginTop='11px';
   subtext.classList.remove('d-none');
   plusicon.classList.add('sa__plusicon--tilt');
-  contact.style.height="auto";
-  contact.style.visibility="visible";
+  contact.classList.remove('d-none');
 }
 
 //accordion close statements
@@ -50,9 +49,7 @@ function repeat2(){
   plusicon.style.marginTop='8px';
   subtext.classList.add('d-none');
   plusicon.classList.remove('sa__plusicon--tilt') ;
-  contact.style.height="0";
-  contact.style.visibility="hidden";
-
+  contact.classList.add('d-none');
 }
 
 function accordion_active(e){
