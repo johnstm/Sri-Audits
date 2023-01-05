@@ -671,7 +671,7 @@ margin-right:8px;
 .sa__about-textcontent2  .textblock1  {
     font-family: var(--font1);
     font-style :normal ;
-    margin:50px 0;
+    margin:40px 0;
     padding:0;
     width:100%;
     min-width: none;
@@ -1134,6 +1134,8 @@ text-transform: capitalize;
         margin-top: 60px !important;
     }
 }
+
+
 @media screen and (min-width:768px){
     .sa__navmenu{
         margin:0;
@@ -2003,12 +2005,18 @@ line-height: 60px;
 }
 
 
-.sa__member-name , .sa__member-degree , .sa__member-bio{
-    font-family: var(--font2);
-    font-size: 14px;
+.sa__member-bio{
+    font-family: var(--font1);
+    font-size: 13px;
     color: var(--blk1);
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 0px;
+}
+@media(min-width:768px){
+    .sa__member-bio{
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 .sa__member-degree {
     padding-bottom: 20px;
@@ -2026,10 +2034,6 @@ line-height: 60px;
     min-height: 320px;
 }
 
-.sa__member-bio{
-    font-size: 14px;
-    line-height: 18px;
-}
 
 .sa__member-bio .sa__member-name{
     color: var(--wine);
@@ -2097,7 +2101,8 @@ line-height: 60px;
 
 
 
-/* About Page */
+
+
 
 
 /* Font sizes */
@@ -2140,6 +2145,9 @@ line-height: 60px;
         letter-spacing: .6px;
      }
 }
+
+/* Paragraphs */
+
 .paragraphs{
     font-size:16px;
     line-height: 27px;
