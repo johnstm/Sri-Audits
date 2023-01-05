@@ -671,7 +671,7 @@ margin-right:8px;
 .sa__about-textcontent2  .textblock1  {
     font-family: var(--font1);
     font-style :normal ;
-    margin:50px 0;
+    margin:40px 0;
     padding:0;
     width:100%;
     min-width: none;
@@ -845,8 +845,8 @@ text-transform: capitalize;
 
 }
 .sa__team-details h4,.sa__directions-place,.sa__contact-email{
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     color:#2D2D2D;
     font-weight: 400;
     margin-bottom: 8px;
@@ -1102,7 +1102,39 @@ text-transform: capitalize;
 .sa__random-mesh #grid1{
     top: -4px  ; 
 }
-/* Contact Page */
+/*Links page*/
+
+.sa__links{
+    margin-bottom: 30px;
+}
+
+.sa__links ul{
+    margin-left:30px;
+}
+.sa__links h4{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.linkswrapper{
+    padding-bottom: 30px !important;
+}
+@media(min-width:992px){
+    .sa__links h4{
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    .linkswrapper{
+        padding-bottom: 60px !important;
+    }
+    .sa__links ul{
+        margin-left: 40px;
+    }
+    .linkswrapper h3{
+        margin-top: 60px !important;
+    }
+}
+
 
 @media screen and (min-width:768px){
     .sa__navmenu{
@@ -1973,12 +2005,18 @@ line-height: 60px;
 }
 
 
-.sa__member-name , .sa__member-degree , .sa__member-bio{
-    font-family: var(--font2);
-    font-size: 14px;
+.sa__member-bio{
+    font-family: var(--font1);
+    font-size: 13px;
     color: var(--blk1);
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 0px;
+}
+@media(min-width:768px){
+    .sa__member-bio{
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 .sa__member-degree {
     padding-bottom: 20px;
@@ -1996,10 +2034,6 @@ line-height: 60px;
     min-height: 320px;
 }
 
-.sa__member-bio{
-    font-size: 14px;
-    line-height: 18px;
-}
 
 .sa__member-bio .sa__member-name{
     color: var(--wine);
@@ -2067,7 +2101,8 @@ line-height: 60px;
 
 
 
-/* About Page */
+
+
 
 
 /* Font sizes */
@@ -2110,6 +2145,9 @@ line-height: 60px;
         letter-spacing: .6px;
      }
 }
+
+/* Paragraphs */
+
 .paragraphs{
     font-size:16px;
     line-height: 27px;
