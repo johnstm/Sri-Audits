@@ -58,7 +58,7 @@ get_template_part('template-parts/main-banner' );
      echo '<div id="addressCard'.$i.'" class="card">
 
                 <div  class="card__location" > 
-                    <img class="sa__directions-pin" src="'.get_template_directory_uri().'/assets/images/location.png" alt="map pin"  />
+                    <img class="sa__directions-pin" src="<?php echo get_template_directory_uri(); ?>/assets/images/location.png" alt="map pin"  />
                     
                     <h6 class="sa__directions-place">'.$placeName.'</h6>
                     <address class="sa__directions-address paragraphs ">
@@ -71,7 +71,7 @@ get_template_part('template-parts/main-banner' );
 
                 <a target="__blank" href="'.$directionsLink.'" class="d-none d-md-block sa__directions-place    sa__directions-place--url paragraphs">
                          Get Directions 
-                        <img src="'.get_template_directory_uri().'/assets/images/direction.png"   alt="arrow"/> 
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/direction.png"   alt="arrow"/> 
                 </a>
           
                 <div class="d-block d-md-none"> 
@@ -111,11 +111,11 @@ get_template_part('template-parts/main-banner' );
                     echo '
                         <div class="card">
                             <div class="d-flex align-center sa__contact-phone">
-                                <img src="'.get_template_directory_uri().'/assets/images/phone.png" alt="phone"  class="" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png" alt="phone"  class="" >
                                 <p class="paragraphs">'.$phoneNumber.'</p>
                             </div>
                             <div class="d-flex align-center sa__contact-email">
-                                <img src="'.get_template_directory_uri().'/assets/images/email.png" alt="email" class="" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.png" alt="email" class="" >
                                 <p>'.$emailId.'</p>
                             </div> 
                         </div>
@@ -157,7 +157,7 @@ get_template_part('template-parts/main-banner' );
      echo '<div id="addressCard'.$i.'" class="card">
 
                 <div  class="card__location" > 
-                <img class="sa__directions-pin" src="'.get_template_directory_uri().'/assets/images/location.png" alt="map pin"  />
+                <img class="sa__directions-pin" src="<?php echo get_template_directory_uri(); ?>/assets/images/location.png" alt="map pin"  />
                     
                     <h6 class="sa__directions-place">'.$placeName.'</h6>
                     <address class="sa__directions-address paragraphs ">
@@ -170,16 +170,16 @@ get_template_part('template-parts/main-banner' );
 
                 <a target="__blank" href="'.$directionsLink.'" class=" d-md-block sa__directions-place    sa__directions-place--url paragraphs">
                          Get Directions 
-                        <img src="'.get_template_directory_uri().'/assets/images/direction.png"   alt="arrow"/> 
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/direction.png"   alt="arrow"/> 
                 </a>
 
                 <div class="d-block sa__contact-number"> 
                     <div class="d-flex align-center sa__contact-phone">
-                        <img src="'.get_template_directory_uri().'/assets/images/phone.png"  alt="phone"  class="" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png"  alt="phone"  class="" >
                         <p class="paragraphs">'.$phoneNumber.'</p>
                     </div>
                     <div class="d-flex align-center sa__contact-email">
-                        <img src="'.get_template_directory_uri().'/assets/images/email.png"  alt="email" class="" >
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.png"  alt="email" class="" >
                         <p>'.$emailId.'</p>
                     </div> 
                 </div>

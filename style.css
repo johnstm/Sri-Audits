@@ -880,7 +880,9 @@ text-transform: capitalize;
 /* SErvices Page */
 
 .sa__servicecomponent-wrapper{
-    padding: 0px 10px
+    padding: 0px 10px;
+    max-width: 500px;
+    margin:0 auto;
   }
 
  .layer1 , 
@@ -895,11 +897,12 @@ text-transform: capitalize;
     margin: 0px auto;
     padding: 10px  0px;
     border-bottom: 2px solid silver;
+    flex-direction: column;
  }
 
  .sa__service-title{
-    font-size: 24px;
-    line-height:30px;
+    font-size: 18px;
+    line-height:26px;
     padding-left:16px;
     font-family:var(--font3);
     color: #473763; 
@@ -909,9 +912,11 @@ text-transform: capitalize;
     display: flex;
 
     justify-content: flex-start;
-    width:50%;
+;
  }
-
+.rightside{
+    margin:15px 0;
+}
  /* .sa__service-accordion-text{
     font-family: var(--font1);
     font-size:22px ;
@@ -919,10 +924,6 @@ text-transform: capitalize;
 
  .sa__service-accordion{
     margin-right:10px;
- }
-
- .rightside{
-
  }
 
  .sa__plusicon{
@@ -1013,8 +1014,14 @@ text-transform: capitalize;
 
 .sa__directions-wrapper,.sa__contactdetails-wrap{
     display: flex;
-    border-bottom: 2px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
     padding-bottom: 30px;
+    padding-left:2%;
+
+}
+.sa__contactdetails-wrap{
+    padding-left: 6.4% !important;
+
 
 }
 .sa__addresswrapper , .sa__contactdetails-wrap{
@@ -1038,13 +1045,15 @@ text-transform: capitalize;
     margin-top: 15px;
 }
 .sa__addresswrapper-mobile .card{
-    padding:22px 0;
-    border-bottom: 2px solid #C0C0C0;
+    padding:28px 0 22px 0;
+    border-bottom: 1px solid #C0C0C0;
 }
-.sa__directions-wrapper .card {
-    padding-bottom: 22px;
+.sa__directions-wrapper{
+    padding-left:2%;
 }
-
+.card__location address{
+    max-width: 400px;
+}
 .sa__directions-wrapper .card:last-child{
     border-bottom: none;
 }
@@ -1245,7 +1254,7 @@ text-transform: capitalize;
 
     .sa__directions-wrapper,.sa__contactdetails-wrap{
 
-        padding-bottom: 33px;
+        padding-bottom: 38px;
     }
     .sa__directions-place img {
         width: 8px;
@@ -1484,9 +1493,25 @@ margin-right:8px;
 
 
      /* What we do  */
-
-
-
+    .sa__servicecomponent-wrapper{
+        max-width: unset;
+    }
+     .sa__service-title{
+        font-size: 20px;
+        line-height:28px;
+        
+     }
+     .layer1{
+        flex-direction: row;
+     }
+     .leftside{
+        margin-top: 10px;
+        width:50%;
+     }
+     .rightside{
+        width:50%;
+        margin:0;
+     }
      .sa__banner-h1{
         font-size: 48px;
         line-height: 60px;
@@ -1498,7 +1523,7 @@ margin-right:8px;
     }
    
     .sa__touch{
-        padding: 75px 0px;
+        padding: 75px 0px 68px;
         
         line-height: 60px;
     }
@@ -1526,11 +1551,14 @@ margin-right:8px;
 
     .sa__directions-wrapper .card,.sa__contactdetails-wrap .card{
         padding:0;
-        width:33%;
+        width:29%;
         padding-right:20px;
     }
+    .sa__directions-wrapper .card:first-child,.sa__contactdetails-wrap .card:first-child{
+        width: 42%;
+    }
     .sa__contactdetails-wrap{
-        padding-top:40px;
+        padding-top:48px;
         padding-bottom:70px;
     }
 
@@ -1538,7 +1566,11 @@ margin-right:8px;
         margin-top:12px;
     }
     .card__location address{
+        max-width: unset;
         padding-right:20%;
+    }
+    .card:last-child .card__location address{
+        padding-right:8%;
     }
 
 
@@ -1547,7 +1579,7 @@ margin-right:8px;
 .sa__about-who{
     margin: 100px auto 60px ;
     font-size:30px;
-    line-height:38px;
+    line-height:42px;
 }
 
 .sa__about1wrapper{
@@ -1621,9 +1653,6 @@ line-height: 60px;
  .sa__subtitle{
     padding: 14px 0;
  }
- .rightside{
-    width:50%;
- }  
 
 /* Services PAge */
 
@@ -2075,8 +2104,8 @@ line-height: 60px;
             letter-spacing: 1.2px;
     }
     .sa__service-title{
-        font-size: 30px;
-        line-height:40px;
+        font-size: 26px;
+        line-height:36px;
         letter-spacing: .6px;
      }
 }
