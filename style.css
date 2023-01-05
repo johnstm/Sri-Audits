@@ -845,8 +845,8 @@ text-transform: capitalize;
 
 }
 .sa__team-details h4,.sa__directions-place,.sa__contact-email{
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     color:#2D2D2D;
     font-weight: 400;
     margin-bottom: 8px;
@@ -1102,8 +1102,38 @@ text-transform: capitalize;
 .sa__random-mesh #grid1{
     top: -4px  ; 
 }
-/* Contact Page */
+/*Links page*/
 
+.sa__links{
+    margin-bottom: 30px;
+}
+
+.sa__links ul{
+    margin-left:30px;
+}
+.sa__links h4{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.linkswrapper{
+    padding-bottom: 30px !important;
+}
+@media(min-width:992px){
+    .sa__links h4{
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    .linkswrapper{
+        padding-bottom: 60px !important;
+    }
+    .sa__links ul{
+        margin-left: 40px;
+    }
+    .linkswrapper h3{
+        margin-top: 60px !important;
+    }
+}
 @media screen and (min-width:768px){
     .sa__navmenu{
         margin:0;
