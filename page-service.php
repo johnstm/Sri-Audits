@@ -48,6 +48,7 @@ get_header();
    <?php 
         
         $i = 1 ; 
+        $plus_icon = get_template_directory_uri().'/assets/images/plus.png' ;
 
         while(true){
       
@@ -83,7 +84,7 @@ get_header();
                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png"/>
                            </div></a>
                         </div>
-                          <img id="plusicon-'.$i.'" src="<?php echo get_template_directory_uri(); ?>/assets/images/plus.png" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
+                          <img id="plusicon-'.$i.'" src="'.$plus_icon.'" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
                       </div>   
                     
                     </div>
