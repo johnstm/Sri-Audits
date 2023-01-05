@@ -126,7 +126,7 @@ src: url(fonts/Wes-FY-Regular.ttf);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .sa__navmenu-right{
@@ -682,7 +682,6 @@ margin-right:8px;
     object-fit: cover;
 }
 
-
  .sa__ourmission-aim {  
     font-family: var(--font1);
     font-size:18px;
@@ -692,23 +691,19 @@ margin-right:8px;
 
 .sa__ourmission-aim .t1 {
     font-family: var(--font1);
-
-color: var(--blk1);
-letter-spacing: 0px;
-
-border-bottom: 2px solid var(--wine);
-text-transform: capitalize;
+    color: var(--blk1);
+    letter-spacing: 0px;
+    border-bottom: 2px solid var(--wine);
+    text-transform: capitalize;
 }
 
 .sa__ourmission-aim .t2 {
     font-family: var(--font3);
     color: var(--wine);
-    text-align: left;
-    
+    text-align: left;   
     font-weight: 600;
     padding-bottom: 22px;
 }
-
 
 .sa__ourmission-aim .t__3{
     padding-bottom: 20px;
@@ -759,18 +754,60 @@ text-transform: capitalize;
     max-height: 210px;
 }
 .sa__teammembers-wrapper{
-    padding: 0px 10px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    row-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sa__member-card{
-
+    width: 46%;
+    margin: 0px 14px 50px 14px;
 }
 
 .sa__member-img{
+    width: 100% ;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:767px){
+    .sa__member-card:nth-child(2n-1) {
+        margin-left: 0px;
+    }
+
+    .sa__member-card:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:768px){ 
+    .sa__member-card {
+        width: 29%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){ 
+    .sa__member-card:nth-child(3n-2) {
+        margin-left: 0px;
+    }
+
+    .sa__member-card:nth-child(3n) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:992px){ 
+    .sa__member-card {
+        width: 23%;
+    }
+
+    .sa__member-card:nth-child(4n-3) {
+        margin-left: 0px;
+    }
+
+    .sa__member-card:nth-child(4n) {
+        margin-right: 0px;
+    }
 }
 
 /* Gallery Slider */
@@ -914,7 +951,6 @@ text-transform: capitalize;
  .sa__service-accordion{
     margin-right:10px;
  }
-
   
  .rightside{
 
@@ -931,9 +967,6 @@ text-transform: capitalize;
     transition : rotate 3.5s;
     -webkit-transform :rotate(45deg);
  }
-
-
-
 
 .sa__serviceswrapper{
     position: relative ; 
@@ -1462,15 +1495,12 @@ margin-right:8px;
         font-weight: 500;
     }
 
-
     .testo__1 a button{
     font-size: 20px;
         line-height: 24px;
         width: 170px;
         height: 60px;
     }
-
-
 
     /* Our Services root */
     .sa__ourservices {
@@ -1487,10 +1517,7 @@ margin-right:8px;
     }
 /*  Our Services  */
 
-
      /* What we do  */
-
-
 
      .sa__banner-h1{
         font-size: 48px;
@@ -1507,7 +1534,6 @@ margin-right:8px;
        column-gap: 200px;
     }
     
-   
     .sa__directions-pin {
         width: 70px;
         height: 70px;
@@ -1534,11 +1560,9 @@ margin-right:8px;
         margin-right: 16px;
     }
 
-
     .sa__addresswrapper , .sa__contactdetails-wrap{
         max-width:  1000px ;
     }
-
     
     .sa__contact-email , .sa__contact-phone , .sa__directions-address{
         font-size: 24px ; 
@@ -1558,27 +1582,21 @@ margin-right:8px;
     position: relative;
 }
 
-
 .sa__about-textcontent2{
     margin-top: 70px;
-   
 }
-
 
 .sa__ourmission{
     padding-top: 0px;
 }
 
- .sa__ourmission-aim {  
+.sa__ourmission-aim {  
     font-size:18px;
 }
 
 .sa__ourmission-aim .t2 {
-   
     padding-bottom: 22px;
- 
 }
-
 
 .sa__ourmission-aim .t__3{
     padding-bottom: 20px;
@@ -1587,34 +1605,29 @@ margin-right:8px;
 }
 
 .sa__ourmission-aim .t__3 span{
-font-size: 36px;
-line-height: 60px;
+    font-size: 36px;
+    line-height: 60px;
 } 
 
-.sa__teammembers-wrapper{
-    grid-template-columns: repeat(4 , 1fr);
-    column-gap: 28px;
-}
 .teamwrapper{
     max-width: unset;
 }
 
 .sa__member-card{
-    min-width: 240px;
+    /* min-width: 240px; */
+    width: 22%;
     max-width: 350px;
+    margin: 0px 14px 86px 14px;
 }
 
 .sa__member-img{
     height: 400px;
 }
-.sa__gallery-wrapper{
-        
+.sa__gallery-wrapper{    
     padding-top:15px;
     padding-bottom: 0px;
 }
-
 /* About PAge */
-
 
 /* Services PAge */
 
@@ -1647,6 +1660,13 @@ line-height: 60px;
 }
 
 /* Contact Page */
+
+}
+
+@media(min-width:1200px){
+    .sa__member-card{
+        width: 23%;
+    }
 }
 
 @media(min-width:1025px){
@@ -1698,8 +1718,8 @@ line-height: 60px;
     }
     .sa__gallery-sqaure{
         position: absolute;
-        top: -122px;
-        left: -124px;
+        top: 0px;
+        left: 0px;
         display: block;
     
     }
@@ -1916,12 +1936,6 @@ line-height: 60px;
 .team__h3 {
     margin:0px ;
     padding: 120px 0px 90px 0px;
-}
-
-.sa__member-img{
-    width: 100% ;
-    height: 220px;
-    margin-bottom: 20px;
 }
 
 

@@ -7,9 +7,8 @@ let activeCard = null ;
 
 
 let cardAccordions = document.getElementsByClassName('sa__cardexpand'); 
-let cardContents = document.getElementsByClassName('sa__card-contents')
-
-
+let cardContents = document.getElementsByClassName('sa__card-contents');
+let cardFront = document.getElementsByClassName('sa__card-front');
 
 function hamBurger(x , y) {
     // x.firstElementChild.classList.toggle("change");
@@ -33,7 +32,6 @@ function openCloseMenu(){
     }
 }
 
-
 // accordion open statements
 function repeat1(){
   activeAccordion.style.alignItems = 'flex-start';
@@ -42,7 +40,6 @@ function repeat1(){
   plusicon.classList.add('sa__plusicon--tilt');
   plusicon.nextSibling.parentNode.style.alignItems = 'flex-start';
 }
-
 
 //accordion close statements
 function repeat2(){
@@ -89,8 +86,9 @@ function accordion_active(e){
   
 }
 
-function openCard(e){
+function openCard(e){ 
    let path = e.path ;
+   console.log(path);
    closeCardContents(); 
 
    for(let i = 0 ; i < path.length ;i++){
@@ -99,16 +97,17 @@ function openCard(e){
         path[i].classList.add('d-none');
     }
    }
-
 }
 
 function closeCardContents(){
   for(let i = 0 ;i < cardContents.length ;i++){
+     if(cardFront[i].classList.contains('d-none')){
+      cardFront[i].classList.remove('d-none')
+     }
      cardContents[i].classList.add('d-none');
      cardContents[i].parentElement.classList.remove('d-none');
   }
 }
-
 
 window.addEventListener('DOMContentLoaded' ,()=>{
   for(let i = 0 ; i < cardAccordions.length ;i++){

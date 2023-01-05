@@ -162,7 +162,7 @@ get_header();
 <section class="sa__gallery-wrapper gallery-about">
     
     <p class="sa__about-who main-heading"> Gallery </p>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sqaure-two-left.png" class="sa__gallery-sqaure" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/meshg.png" class="sa__gallery-sqaure" />
     <div class="contentwrapper">
 
         <div class="splide__track">
