@@ -108,8 +108,7 @@ a{
 
 .sa__navmenu {
    
-    /* box-shadow:  5px 8px #00000014 ;
-    padding: 10px 10px 10px 5px; */
+    margin:10px 0;
 }
 
 .sa__navmenu .custom-logo{
@@ -1013,7 +1012,6 @@ text-transform: capitalize;
 
 .sa__directions-wrapper,.sa__contactdetails-wrap{
     display: flex;
-    border-bottom: 1px solid #C0C0C0;
     padding-bottom: 30px;
     padding-left:2%;
 
@@ -1049,6 +1047,7 @@ text-transform: capitalize;
 }
 .sa__directions-wrapper{
     padding-left:2%;
+    border-bottom: 1px solid #C0C0C0;
 }
 .card__location address{
     max-width: 400px;
@@ -1107,6 +1106,9 @@ text-transform: capitalize;
 /* Contact Page */
 
 @media screen and (min-width:768px){
+    .sa__navmenu{
+        margin:0;
+    }
     .sa__navmenu-anch ,.sa__navmenu-anch:hover{
         border: none ; 
     }
@@ -1433,6 +1435,9 @@ margin-right:8px;
 }
 
 @media screen and (min-width:992px){
+    .sa__navmenu{
+        margin: 10px 0;
+    }
     .contentwrapper{
         padding:0 5%;
     }
@@ -1833,7 +1838,7 @@ line-height: 60px;
     max-width: 1400px;
     grid-template-columns: 1fr;
     row-gap: 40px;
-    padding: 0px 20px;
+    padding: 0px;
     color: #FFFFFF;
     font-family: var(--font1);
     font-style: normal;
