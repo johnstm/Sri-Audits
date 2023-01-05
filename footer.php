@@ -17,49 +17,28 @@
             <span>About Us</span>
             </a>
             </li>
-            <li>
-            <a href="/">
-            <span>Our Vision</span>
-            </a>
-            </li>
+       
             <li>
             <a href="/services">
             <span>Services</span>
             </a>
             </li>
             <li>
-            <a href="/">
-            <span>Our Team</span>
-            </a>
-            </li>
-        
-        </ul>
-
-        <ul>
-            <li>
-                <a href="/">
-            <span>Gallery</span>
-                </a>
-            </li>
-            <li>
                 <a href="/">
             <span>Useful Links</span>
                 </a>
             </li>
-            <li>
-                <a href="/">
-            <span>News & Events</span>
-                </a>
-            </li>
+
             <li>
                 <a href="/">
             <span>Branches</span>
                 </a>
             </li>
+        
         </ul>
         </div>
 
-        <div>
+        <div class="sa__footer-address">
             <p>Contact Us</p>
             <address>
                 Sreenidhi", TC 37/275,<br>
@@ -68,7 +47,7 @@
             </address>
         </div>
 
-        <div>
+        <div class="sa__footer-phone">
           <p>Ph:&nbsp;&nbsp; 91+ 471 + 2451240, 2453639</p>
           <p>Fax:&nbsp;&nbsp; 91 +471 +4013210<p>
           <p>Mail:&nbsp;&nbsp; sricas@vsnl.com ; sricas@sriaudit.in</p>
