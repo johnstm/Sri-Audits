@@ -1636,7 +1636,9 @@ margin-right:8px;
 }
 
 .sa__member-img{
-    height: 400px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 .sa__gallery-wrapper{    
     padding-top:15px;
@@ -1993,8 +1995,8 @@ margin-right:8px;
 
 .sa__card-contents{
     padding: 8px;
-    height: 270px;
-    overflow-y: scroll;
+    height: 90%;
+    overflow-y: auto;
     scrollbar-color: var(--wine) var(--wine);
     background-color: #FBF7F7;
 }
