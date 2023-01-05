@@ -73,10 +73,15 @@ get_header();
                      
                       <div class="rightside">
                         <div class="sa__service-accordion">
-                           <p class="sa__service-accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis elit risus. Vestibulum fring... 
+                           <p class="sa__service-accordion-text paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis elit risus. Vestibulum fring... 
                            </p>
 
-                           <p id="subtext-'.$i.'" class="d-none sa__service-accordion-text ">'.$serviceSubtext.'</p>
+                           <p id="subtext-'.$i.'" class="d-none sa__service-accordion-text sa__subtitle paragraphs">'.$serviceSubtext.'</p>
+                           <a href="/contact-us"><div class="sa__contact-main">
+                           <p class="sa__service-accordion-text paragraphs sa__contact">Contact Us
+                           </p>
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png"/>
+                           </div></a>
                         </div>
                           <img id="plusicon-'.$i.'" src="<?php echo get_template_directory_uri(); ?>/assets/images/plus.png" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
                       </div>   
