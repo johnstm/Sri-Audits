@@ -937,19 +937,16 @@ text-transform: capitalize;
     -webkit-transform :rotate(45deg);
  }
 
-
-
-
 .sa__serviceswrapper{
     position: relative ; 
+    padding: 30px 0px;
 }
 
 .sa__service-accordion-text{
     font-family: var(--font1);
-   
     color: var(--blk1);
-
  }
+
  .sa__contact-main{
     display: flex;
 
@@ -973,14 +970,12 @@ text-transform: capitalize;
     text-align:center;
 }
 
-
 .sa__directions-place{
     font-family: var(--font2);
     color: var(--blk1);
     letter-spacing: 0px;
     margin-bottom: 0 !important;
     margin-top: 6px;
-
 }
 
 .sa__directions-place img {
@@ -1002,8 +997,7 @@ text-transform: capitalize;
     margin-left: 5px;
 }
 
-.sa__directions-address{
-    
+.sa__directions-address{   
     font-family: var(--font1);
     color: #4B4B4B ; 
     font-style: normal;
@@ -1017,19 +1011,19 @@ text-transform: capitalize;
 }
 .sa__contactdetails-wrap{
     padding-left: 6.4% !important;
-
-
 }
+
 .sa__addresswrapper , .sa__contactdetails-wrap{
     margin: 0 auto;
     padding:0px 20px;
     display: none;
-
 }
+
 .sa__addresswrapper-mobile{
     display: block;
     max-width: 600px;
 }
+
 .sa__addresswrapper-mobile .sa__directions-wrapper{
     flex-direction: column;
    
@@ -1085,7 +1079,6 @@ text-transform: capitalize;
     height: 32px;
     padding-right: 12px;
 }
-
 
 .sa__contact-email{
     font-family: var(--font1) ;
@@ -1445,6 +1438,10 @@ margin-right:8px;
 
 
     /* Services Page */
+    .sa__serviceswrapper{
+        position: relative ; 
+        padding: 40px 0px;
+    }
 
     .layer1{
         max-width :800px ;
@@ -1686,6 +1683,10 @@ line-height: 60px;
 
 
 /* Services PAge */
+.sa__serviceswrapper{
+    position: relative ; 
+    padding: 100px 0px;
+}
 
 .layer1{
   padding: 40px 0;

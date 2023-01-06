@@ -5,7 +5,7 @@
 
         <div class="logo-wrap">
             <a href="/">
-            <img src="" class="img-fluid" alt="logo #2" width="100" height="40">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/footerlogo.png';?>" class="img-fluid" alt="logo #2" width="192" height="80">
             </a>
         </div>
 
@@ -30,7 +30,7 @@
             </li>
 
             <li>
-                <a href="/">
+                <a href="/contact">
             <span>Branches</span>
                 </a>
             </li>
@@ -57,9 +57,9 @@
     </div>
   </section>
 
-    <!-- <div class="sa__reserved">  
-        <span >© 2018. All rights reserved. Powered by Xenfy Infolabs(P)Ltd.</span>
-    </div> -->
+    <div class="sa__reserved">  
+        <span >© <?php echo date("Y"); ?>. All rights reserved. Powered by Terrific Minds</span>
+    </div>
 </footer>
 
 </body>
