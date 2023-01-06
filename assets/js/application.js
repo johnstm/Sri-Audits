@@ -58,7 +58,7 @@ function accordion_active(e){
          activeAccordion = document.getElementById(`layer-${e}`);
          subtext = document.getElementById(`subtext-${e}`) ;
          plusicon = document.getElementById(`plusicon-${e}`);
-         contact=document.querySelector(`#layer-${e} .sa__service-accordion a `);
+         contact=document.querySelector(`.pagelink-${e}`);
          repeat1();
     }
 
@@ -81,7 +81,7 @@ function accordion_active(e){
           activeAccordion =  document.getElementById(`layer-${e}`);
           subtext = document.getElementById(`subtext-${e}`) ;
           plusicon = document.getElementById(`plusicon-${e}`);
-    
+          contact=document.querySelector(`.pagelink-${e}`);
           repeat1();
 
         }
