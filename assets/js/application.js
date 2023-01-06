@@ -107,8 +107,8 @@ function closeCardContents(){
      if(cardFront[i].classList.contains('d-none')){
       cardFront[i].classList.remove('d-none')
      }
-     cardContents[i].classList.add('d-none');
-     cardContents[i].parentElement.classList.remove('d-none');
+     cardContents[i].classList.add('sa__card-overlap');
+     cardContents[i].parentElement.classList.remove('sa__card-overlap');
   }
 }
 

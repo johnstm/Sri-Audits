@@ -1695,7 +1695,7 @@ line-height: 60px;
 }
 
 .sa__member-img{
-    height: 400px;
+    /* height: 400px; */
 }
 .sa__gallery-wrapper{
         
@@ -1797,7 +1797,7 @@ line-height: 60px;
         z-index: -1;
     }
     .sa__team-sqaure-bottom{
-        bottom:35%;
+        bottom:12%;
         right:0;
         top:unset;
         left:unset;
@@ -2041,7 +2041,8 @@ line-height: 60px;
 
 .sa__member-img{
     width: 100% ;
-    height: 220px;
+    /* height: 220px; */
+    object-fit: contain;
     margin-bottom: 20px;
 }
 
@@ -2062,15 +2063,40 @@ line-height: 60px;
 .sa__member-degree {
     padding-bottom: 20px;
 }
-
+.sa__member{
+    position: relative;
+}
 .sa__card-contents{
-    padding: 8px;
-    height: 270px;
+
     overflow-y: scroll;
+    height:0px;
     scrollbar-color: var(--wine) var(--wine);
     background-color: #FBF7F7;
+    scrollbar-color: #74000D;
 }
 
+.sa__card-contents::-webkit-scrollbar {
+  width: 6px;
+  overflow: unset;
+}
+.sa__card-contents::-webkit-scrollbar-track {
+  background: #FBF7F7 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 0.6;
+
+}
+.sa__card-contents::-webkit-scrollbar-thumb {
+  background: #74000D 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+
+  opacity: 1;
+}
+.sa__card-overlap{
+    position: absolute;
+    top:0;
+    height:100%;
+    padding: 8px;
+}
 .sa__card-front{
     min-height: 320px;
 }
