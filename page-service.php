@@ -77,19 +77,17 @@ get_header();
                         <div class="sa__service-accordion">
                            <p class="sa__service-accordion-text paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis elit risus. Vestibulum fring... 
                            </p>
-
                            <p id="subtext-'.$i.'" class="d-none sa__service-accordion-text sa__subtitle paragraphs">'.$serviceSubtext.'</p>
-                           <a href="/contact" class="d-none"><div class="sa__contact-main ">
+                           <a href="/contact" class="d-none pagelink-'.$i.'"><div class="sa__contact-main ">
                            <p class="sa__service-accordion-text paragraphs sa__contact">Contact Us
                            </p>
-                           <img src="'.$arrow.'"/>
+                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.png"/>
                            </div></a>
                         </div>
                           <img id="plusicon-'.$i.'" src="'.$plus_icon.'" alt="plus icon" class="sa__plusicon" width="28" height="28" onclick="accordion_active('.$i.')"  >
                       </div>   
                     
                     </div>
-
                </div>
                 
                ';
@@ -106,7 +104,6 @@ get_header();
             <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/search.jpg" alt = "tax" width="43" height="43" >
             <h3 class="sa__service-title">System & audit</h3>
         </div>
-
         <div class="rightside">
             <div class="sa__service-accordion">
                 <p class="sa__service-accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis elit risus. Vestibulum fringilla eget velit at vestibulum quis leo congue.</p>
@@ -114,12 +111,8 @@ get_header();
             </div>
             <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="plus icon" width="28" height="28" onclick="accordion_active(1)"  >
         </div>
-
-
      </div>
-
   </div> 
-
   <div class="sa__servicecomponent-wrapper">
     
      <div id="layer-2" class="layer1"> 
@@ -128,7 +121,6 @@ get_header();
             <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/search.jpg" alt = "tax" width="43" height="43" >
             <h3 class="sa__service-title">System & audit</h3>
         </div>
-
         <div class="rightside">
             <div class="sa__service-accordion">
                 <p class="sa__service-accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis elit risus. Vestibulum fringilla eget velit at vestibulum quis leo congue.</p>
@@ -136,10 +128,7 @@ get_header();
             </div>
             <img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/08/plus.jpg" alt="plus icon" width="28" height="28" onclick="accordion_active(2)"  >
         </div>
-
-
      </div>
-
   </div>  -->
 
 </section>
@@ -154,4 +143,3 @@ get_header();
 <?php
 get_footer();
 ?>
-

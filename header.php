@@ -52,7 +52,7 @@
 
 					<div class="d-md-block sa__navmenu-right" id="mobilemenu">
 
-						<div class="d-md-none" id="hamburgerSide" onclick="hamBurger(this ,'hamburgerMenu');" style="display:grid ; place-items:end;margin:10px;" >
+						<div class="d-none" id="hamburgerSide" onclick="hamBurger(this ,'hamburgerMenu');" style="display:grid ; place-items:end;margin:10px;" >
 							<div class="bar1"></div>
 							<div class="bar2"></div>
 							<div class="bar3"></div>

@@ -10,7 +10,7 @@
      if($banner):
         echo $banner['url'];
      endif;
-    ?>" class="d-none d-md-block sa__banner-img" alt="<?php echo $image['alt']; ?>" />
+    ?>" class=" d-md-block sa__banner-img" alt="<?php echo $image['alt']; ?>" />
     
     <div class="sa__herotextwrapper">
     <h1 class="sa__banner-h1">

@@ -23,6 +23,7 @@ get_template_part('template-parts/main-banner' );
 
 <section class="sa__contactwrapper">
 
+
 <img src="<?php echo get_template_directory_uri().'/assets/images/sqaure-two-left.png'; ?>" id="grid1" alt="grid"/>
 <img src="<?php echo get_template_directory_uri().'/assets/images/three-sqaure.png' ; ?>" id="grid2" alt="grid"/>
 

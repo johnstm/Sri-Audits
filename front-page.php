@@ -21,7 +21,7 @@ get_header();
     <div class="wrapper__1">
         <div class="contentwrapper">
             <div class="testo__1">
-                <h1>Sridhar & Co Charted Associates</h1>
+                <h1>Sridhar & Co Chartered Accountants</h1>
                 <p>Coming together is beginning, Keeping together is Progress, Working together is Success</p>
                 <a href="/contact">
                     <button>
@@ -61,7 +61,7 @@ get_header();
                 <div class="sa__welcome-textwrap">
                     <p style=" font-family: var(--font1); border-bottom: 2px solid var(--wine); width: fit-content ; /* padding-bottom: 5px; */  margin-bottom: 13px;  "class="paragraphs">About Us</p>
 
-                    <h2 style="font-family: var(--font3);color: var(--wine);" class="main-heading"> Welcome to Sridhar & Co Chartered Associates</h2>
+                    <h2 style="font-family: var(--font3);color: var(--wine);" class="main-heading"> Welcome to Sridhar & Co Chartered Accountants</h2>
                 </div>
 
               
@@ -172,7 +172,7 @@ get_header();
 
 <section class="sa__gallery-wrapper">
     
-    <p class="sa__about-who main-heading"> Our Team </p>
+    <p class="sa__about-who main-heading gallery-heading"> Our Team </p>
     
     <div class="contentwrapper teamwrapper">
 
@@ -286,7 +286,7 @@ var settings = {
   slide: '.sa__team-member',
   slidesToShow: 4,
   slidesToScroll:1,
-  infinite:false,
+  infinite:true,
 
   responsive: [
     {

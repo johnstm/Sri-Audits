@@ -107,7 +107,7 @@ a{
 
 .sa__navmenu {
    
-    margin:10px 0;
+    margin:30px 0;
 }
 
 .sa__navmenu .custom-logo{
@@ -127,7 +127,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px;
+
 }
 
 .sa__navmenu-right{
@@ -353,7 +353,16 @@ button{
     color: var(--blk1);
     opacity: 1;    
 }
+.mesh ,#grid1,#grid2,#grid3,#grid4{
+    display: none;
 
+}
+@media(min-width:1025px){
+    .mesh ,#grid1,#grid2,#grid3,#grid4{
+        display: block;
+
+    }
+}
 .sa__welcome-wrapper #mesh1 , 
 .sa__welcome-wrapper #mesh2  {
     width: 80px;
@@ -650,7 +659,9 @@ margin-right:8px;
     font-weight:600;
     text-transform: capitalize;
 }
-
+.gallery-heading{
+    margin:0 !important;
+}
 .sa__about1wrapper{
     position: relative;
     margin-bottom: 40px;
@@ -768,6 +779,7 @@ text-transform: capitalize;
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
     row-gap: 40px;
+    padding-bottom: 75px !important;
 }
 
 .sa__member-card{
@@ -893,7 +905,7 @@ text-transform: capitalize;
  .layer1  {
     min-height: 90px; 
     margin: 0px auto;
-    padding: 10px  0px;
+    padding: 30px  0px 10px;
     border-bottom: 2px solid silver;
     flex-direction: column;
  }
@@ -904,6 +916,7 @@ text-transform: capitalize;
     padding-left:16px;
     font-family:var(--font3);
     color: #473763; 
+    margin-top: 12px;
  }
 
  .layer1 .leftside {
@@ -939,7 +952,7 @@ text-transform: capitalize;
 
 .sa__serviceswrapper{
     position: relative ; 
-    padding: 30px 0px;
+    padding: 20px 0px 55px;
 }
 
 .sa__service-accordion-text{
@@ -1064,7 +1077,9 @@ text-transform: capitalize;
     flex-direction: column;
     row-gap: 10px;
 }
-
+.sa__contactwrapper{
+    position: relative;
+}
 .sa__contact-phone{
     font-family: var(--font1) ;
     font-size: 15px;
@@ -1440,7 +1455,7 @@ margin-right:8px;
     /* Services Page */
     .sa__serviceswrapper{
         position: relative ; 
-        padding: 40px 0px;
+     
     }
 
     .layer1{
@@ -1536,6 +1551,7 @@ margin-right:8px;
      .sa__service-title{
         font-size: 20px;
         line-height:28px;
+        margin-top: 0px;
         
      }
      .layer1{
@@ -1588,11 +1604,14 @@ margin-right:8px;
 
     .sa__directions-wrapper .card,.sa__contactdetails-wrap .card{
         padding:0;
-        width:29%;
+        width:36%;
         padding-right:20px;
     }
     .sa__directions-wrapper .card:first-child,.sa__contactdetails-wrap .card:first-child{
-        width: 42%;
+        width: 39%;
+    }
+    .sa__directions-wrapper .card:last-child,.sa__contactdetails-wrap .card:last-child{
+        width: 25%;
     }
     .sa__contactdetails-wrap{
         padding-top:48px;
@@ -1618,7 +1637,9 @@ margin-right:8px;
     font-size:30px;
     line-height:42px;
 }
-
+.gallery-heading{
+    margin: 60px 0 !important;
+}
 .sa__about1wrapper{
     padding-bottom: 20px;
     position: relative;
@@ -1685,7 +1706,7 @@ line-height: 60px;
 /* Services PAge */
 .sa__serviceswrapper{
     position: relative ; 
-    padding: 100px 0px;
+    padding: 70px 0px 100px; 
 }
 
 .layer1{
@@ -1734,6 +1755,7 @@ line-height: 60px;
     .sa__about-img {
         display: block;
     }
+
     .sa__welcome-wrapper #mesh1 , 
     .sa__welcome-wrapper #mesh2 {
         display: block;
@@ -1761,8 +1783,8 @@ line-height: 60px;
     }
     .sa__gallery-sqaure{
         position: absolute;
-        top: -122px;
-        left: -124px;
+        top: -3px;
+        left: -5px;
         display: block;
     
     }
@@ -1856,8 +1878,10 @@ line-height: 60px;
  .sa__reserved{
     text-align: center;
     font-family: var(--font1);
-    font-size: 16px;
-    line-height: 26px; 
+    font-size: 14px;
+    line-height: 23px; 
+    letter-spacing: .2px;
+    padding: 5px 0;
 }
 
 .sa__footer{
@@ -1917,10 +1941,7 @@ line-height: 60px;
         background-size: cover;
     }
 
-    .sa__reserved{ 
-        font-size: 20px;
-        line-height: 33px; 
-    }
+
 
 
     .sa__footer-menucustom{
@@ -2001,7 +2022,7 @@ line-height: 60px;
 /* About Page */
 .team__h3 {
     margin:0px ;
-    padding: 120px 0px 90px 0px;
+    padding: 80px 0px 70px 0px;
 }
 
 .sa__member-img{
