@@ -1119,6 +1119,11 @@ text-transform: capitalize;
 .linkswrapper{
     padding-bottom: 30px !important;
 }
+
+.sa__contactdetails-wrap  .contact-icons ,
+.sa__addresswrapper   .contact-icons {
+    color: #4B4B4B;
+}
 @media(min-width:992px){
     .sa__links h4{
         font-size: 24px !important;

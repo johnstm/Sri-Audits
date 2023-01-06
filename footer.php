@@ -24,7 +24,7 @@
             </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/useful-links">
             <span>Useful Links</span>
                 </a>
             </li>
