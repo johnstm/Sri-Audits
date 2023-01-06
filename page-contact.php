@@ -22,7 +22,7 @@ get_template_part('template-parts/main-banner' );
 ?>
 
 <section class="sa__contactwrapper">
- 
+
 
 <img src="<?php echo get_template_directory_uri().'/assets/images/sqaure-two-left.png'; ?>" id="grid1" alt="grid"/>
 <img src="<?php echo get_template_directory_uri().'/assets/images/three-sqaure.png' ; ?>" id="grid2" alt="grid"/>
@@ -71,30 +71,17 @@ get_template_part('template-parts/main-banner' );
  
                 </div>
 
-
                 <a target="__blank" href="'.$directionsLink.'" class="d-none d-md-block sa__directions-place    sa__directions-place--url paragraphs">
                          Get Directions 
                         <img src="'.$arrow.'"   alt="arrow"/> 
                 </a>
-          
-                <div class="d-block d-md-none"> 
-                    <div class="d-flex align-center sa__contact-phone">
-                        <img src="'.$phone_icon.'" alt="phone"  class="" >
-                        <p >'.$phoneNumber.'</p>
-                    </div>
-                    <div class="d-flex align-center sa__contact-email">
-                        <img src="'.$email_icon.'" alt="email" class="" >
-                        <p>'.$emailId.'</p>
-                    </div> 
-                </div>
-            
+        
         </div>'; 
 
       $i++;
    }
   
   ?> 
-    
     </div>
 </div>
 
@@ -133,9 +120,6 @@ get_template_part('template-parts/main-banner' );
             }
         ?>  
     </div>
-
-
-
 
     <!-- For mobile phone -->
     <div class="sa__addresswrapper sa__addresswrapper-mobile">
