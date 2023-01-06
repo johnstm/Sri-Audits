@@ -56,6 +56,12 @@ src: url(fonts/Wes-FY-Regular.ttf);
 a{
     text-decoration: none;
 }
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
 /* Containers Sizes */
 .contentwrapper {
     /* width: 100%; */
@@ -107,7 +113,7 @@ a{
 
 .sa__navmenu {
    
-    margin:30px 0;
+    padding:18px 0;
 }
 
 .sa__navmenu .custom-logo{
@@ -780,6 +786,7 @@ text-transform: capitalize;
     column-gap: 20px;
     row-gap: 40px;
     padding-bottom: 75px !important;
+    position: relative;
 }
 
 .sa__member-card{
@@ -1484,7 +1491,7 @@ margin-right:8px;
 
 @media screen and (min-width:992px){
     .sa__navmenu{
-        margin: 10px 0;
+        padding: 10px 0;
     }
     .contentwrapper{
         padding:0 5%;
@@ -1787,6 +1794,17 @@ line-height: 60px;
         left: -5px;
         display: block;
     
+    }
+    .sa__team-sqaure{
+        top:-70px;
+        left:1.5%;
+        z-index: -1;
+    }
+    .sa__team-sqaure-bottom{
+        bottom:35%;
+        right:0;
+        top:unset;
+        left:unset;
     }
     .sa__ourmission-sqaure {
         display: block;

@@ -114,7 +114,8 @@ get_header();
         <h3 class="sa__about-who team__h3 main-heading" >Our Team</h3>
 
         <div class="contentwrapper sa__teammembers-wrapper">
-            
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/meshg.png" class="sa__team-sqaure sa__gallery-sqaure" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/meshg.png" class="sa__team-sqaure-bottom sa__gallery-sqaure" />
              <?php
                 $i=1 ;
                 $plus_icon = get_template_directory_uri().'/assets/images/plus.png';  ; 
