@@ -162,7 +162,7 @@ get_header();
 
 <section class="sa__gallery-wrapper gallery-about">
     
-    <p class="sa__about-who main-heading"> Gallery </p>
+    <p class="sa__about-who main-heading gallery-heading"> Gallery </p>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/meshg.png" class="sa__gallery-sqaure" />
     <div class="contentwrapper">
 
@@ -216,7 +216,7 @@ var settings = {
   slide: '.gallery__img',
   slidesToShow: 5,
   slidesToScroll:1,
-  infinite:false,
+  infinite:true,
 
   responsive: [
     {

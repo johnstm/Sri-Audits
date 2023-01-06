@@ -172,7 +172,7 @@ get_header();
 
 <section class="sa__gallery-wrapper">
     
-    <p class="sa__about-who main-heading"> Our Team </p>
+    <p class="sa__about-who main-heading gallery-heading"> Our Team </p>
     
     <div class="contentwrapper teamwrapper">
 
@@ -286,7 +286,7 @@ var settings = {
   slide: '.sa__team-member',
   slidesToShow: 4,
   slidesToScroll:1,
-  infinite:false,
+  infinite:true,
 
   responsive: [
     {
