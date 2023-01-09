@@ -17,7 +17,7 @@ get_header();
         echo $bannerimg["url"]; 
       ?>
       alt ="Sri audits Chartered Associates"  > 
-      
+      <img src="<?php echo get_template_directory_uri().'/assets/images/Mobile-backgnd.png';?>" class="sa-home__banner-mobile"    alt ="Sri audits Chartered Associates">
     <div class="wrapper__1">
         <div class="contentwrapper">
             <div class="testo__1">

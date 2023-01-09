@@ -249,9 +249,8 @@ button{
 .wrapper__1{
     position: absolute;
     top:50%;
-    left:25px;
-    right: 0px;
     transform: translate(0%,-50%);
+    max-width: 80%;
 }
 
 .sa__herocontent{
@@ -263,14 +262,24 @@ button{
     object-fit: cover;
     max-width: 100%;
     max-height: 100% ;
+
 }
 
 @media screen and (max-width:767px) {
     .sa-home__banner{
         height: 420px;
+        display: none;
     }
 }
-
+.sa-home__banner-mobile{
+    height: 500px;
+    max-width: 100%;
+}
+@media(min-width:768px){
+    .sa-home__banner-mobile{
+        display: none;
+    }
+}
 .testo__1 h1 {
     font-family:  var(--font3);
     letter-spacing: 0px;
@@ -288,7 +297,7 @@ button{
     letter-spacing: 0px;
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 20px;
+    padding: 10px 0 20px;
 }
 
 
@@ -1189,7 +1198,7 @@ text-transform: capitalize;
     .testo__1 p {
         font-size: 20px;
         line-height: 30px;
-        padding-bottom: 40px;
+        padding: 10px 0 33px;
     }
 
     .sa__navmenu {
@@ -1509,10 +1518,12 @@ margin-right:8px;
 
     .wrapper__1{
         left:0px;
+        max-width: unset;
     }
 
     .testo__1 {
-        width: 530px;
+        max-width: 585px;
+        width: auto;
     }
 
     .testo__1  h1{
@@ -2068,7 +2079,7 @@ line-height: 60px;
 }
 .sa__card-contents{
 
-    overflow-y: scroll;
+    overflow-y: auto;
     height:0px;
     scrollbar-color: var(--wine) var(--wine);
     background-color: #FBF7F7;
