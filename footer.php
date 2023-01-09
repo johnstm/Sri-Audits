@@ -5,7 +5,7 @@
 
         <div class="logo-wrap">
             <a href="/">
-            <img src="<?php echo get_template_directory_uri().'/assets/images/Sridhar & Co.png';?>" class="img-fluid" alt="logo #2" width="192" height="80">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/Sridhar accountant logo.png';?>" class="img-fluid" alt="logo #2" width="192" height="80">
             </a>
         </div>
 
