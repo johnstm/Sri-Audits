@@ -1,0 +1,232 @@
+
+/*  Our Services */
+
+.sa__servicecomponent-wrapper{
+    padding: 0px 10px;
+    max-width: 500px;
+    margin:0 auto;
+  }
+@media(min-width:992px){
+    .sa__servicecomponent-wrapper{
+        max-width: unset;
+    }
+}
+
+.sa__serviceswrapper{
+    position: relative ; 
+    padding: 20px 0px 55px;
+}
+@media(min-width:992px){
+    .sa__serviceswrapper{
+        padding: 70px 0px 100px; 
+    }
+}
+
+ .layer1 , 
+ .layer1 .rightside{
+    display: flex ; 
+    justify-content: space-between ;
+ 
+ }
+  
+ .layer1  {
+    min-height: 90px; 
+    margin: 0px auto;
+    padding: 30px  0px 10px;
+    border-bottom: 2px solid silver;
+    flex-direction: column;
+ }
+
+ @media(min-width:768px){
+    .layer1{
+        max-width :800px ;
+        }
+ }
+ @media(min-width:992px){
+    .layer1{
+       flex-direction: row;
+       padding: 40px 0;
+    }
+ }
+
+ .sa__service-title{
+    font-size: 18px;
+    line-height:26px;
+    padding-left:16px;
+    font-family:var(--font3);
+    color: #473763; 
+    margin-top: 12px;
+ }
+ @media(min-width:992px){
+     .sa__service-title{
+        font-size: 20px;
+        line-height:28px;
+        margin-top: 0px;
+     }
+}
+ .layer1 .leftside {
+    display: flex;
+
+    justify-content: flex-start;
+ }
+.rightside{
+    margin:15px 0;
+}
+@media(min-width:992px){
+     .leftside{
+        margin-top: 10px;
+        width:50%;
+     }
+     .rightside{
+        width:50%;
+        margin:0;
+     }
+     .sa__banner-h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .sa__banner-p1{
+        font-size: 20px;
+        line-height: 33px;
+    }
+   
+}
+ .sa__service-accordion{
+    margin-right:10px;
+ }
+
+ @media(min-width:768px){
+        .sa__service-accordion{
+           margin-right :30px;
+        }
+ }
+ .sa__plusicon{
+    transform: rotate(0deg);
+    transition: rotate 0.5s;
+    -webkit-transform :rotate(0deg);
+    margin-top: 8px;
+ }
+
+ .sa__plusicon--tilt{
+    transform: rotate(45deg);
+    transition : rotate 3.5s;
+    -webkit-transform :rotate(45deg);
+ }
+
+.sa__service-accordion-text{
+    font-family: var(--font1);
+    color: var(--blk1);
+ }
+
+.sa__servies-gridwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px;
+    padding-bottom: 50px;
+ }
+ 
+ .sa__service-card{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     background-color: var(--clr3);
+     opacity: 1;
+     border-radius: 8px;
+     box-shadow: 0px 3px 6px #3C3C3C1F;
+     padding: 20px 10px;
+     width: 44%;
+     margin-bottom: 20px;
+ }
+ 
+ .sa__service-card-img{
+     width: 100px;
+     height: 100px;
+ }
+ 
+ .sa__service-card p{
+     font-size: 16px;
+     padding-top: 30px;
+     line-height: 26px;
+     text-align: center;
+     font-family: var(--font2);
+     color: var(--blk1);
+ }
+ 
+ .sa__subtitle{
+     margin:6px 0;
+  }
+ @media screen and (max-width:767px) {
+     .sa__service-card{
+         width: 44%;
+     }
+ 
+     .sa__service-card:nth-child(2n-1){
+         margin-right: 20px;
+     }
+ }
+ 
+ @media screen and (min-width:768px) {
+     .sa__service-card{
+         width: 30%;
+         margin:0px  10px 20px 10px ;
+     }
+ }
+ 
+ @media screen and (min-width:992px) {
+     .sa__service-card{
+         width: 20%;
+         margin:0px  32px 32px 32px ;
+     }
+ 
+     .sa__service-card-img{
+         width: 140px;
+         height: 140px;
+     }
+
+    .sa__subtitle{
+        padding: 14px 0;
+    }
+
+ }
+ 
+ @media screen and (min-width:1200px) {
+     .sa__service-card{
+         margin-bottom: 80px;
+         height: 280px;
+     }
+ }
+
+
+
+ #grid, #grid2 , #grid3 , #grid4{
+    position: absolute;
+    z-index: -1;
+}
+
+#grid1{
+    top: 0px;
+    left: 0px;
+    width: 8%;
+    position: absolute;  
+}
+
+#grid2{
+  bottom:40%;
+  right:0px;
+  width: 4%;
+  position: absolute;
+}
+#grid3{
+    top:40%;
+    left:0px;
+    width: 4%;
+    position: absolute;
+}
+#grid4{
+    bottom:0px;
+    right:0px;
+    width: 8%;
+    position: absolute;
+}

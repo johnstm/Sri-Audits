@@ -22,12 +22,12 @@ get_header();
 
 <?php   get_template_part('template-parts/main-banner') ; ?>
 
-<p class="sa__about-who main-heading">Who we are</p>
+
 
 
 
 <section class="sa__about1wrapper">
-
+<p class="sa__about-who main-heading">Who we are</p>
 
 <div class="contentwrapper">
     <div class="sa__about-textcontent1">
@@ -132,25 +132,26 @@ get_header();
 
                     echo 
                     '<div class="sa__member-card">
-                        <div class="sa__card-front">
-                            <img class="sa__member-img" alt="member" src="'.$mem_img['url'].'">
-                            <div class="sa__team-details">
-                            <h4 class="sa__member-name">'.$mem_name.'</h4>
-                            <h6 class="sa__member-degree">'.$mem_des.'</h6>
+                        <div class="sa__member">
+                            <div class="sa__card-front">
+                                <img class="sa__member-img" alt="member" src="'.$mem_img['url'].'">
+                                <div class="sa__team-details">
+                                <h4 class="sa__member-name">'.$mem_name.'</h4>
+                                <h6 class="sa__member-degree">'.$mem_des.'</h6>
+                                </div>
                             </div>
-                            <img  id="" src="'.$plus_icon.'" alt="click" class="sa__plusicon sa__cardexpand" width="20" height="20" >
-                        </div>
     
-    
-                        <div class="d-none sa__card-contents">
-                        <div class="sa__team-details">
-                            <h4 class="sa__member-name">'.$mem_name.'</h4>
-                            <h6 class="sa__member-degree">'.$mem_des.'</h6>
-                        </div>
+                        <div class="sa__card-contents">
+                            <div class="sa__team-details">
+                                <h4 class="sa__member-name">'.$mem_name.'</h4>
+                                <h6 class="sa__member-degree">'.$mem_des.'</h6>
+                            </div>
                             <p class="sa__member-bio">
                                 '.$mem_content.'
                             </p>
+                            </div>
                         </div>
+                        <img  id="" src="'.$plus_icon.'" alt="click" class="sa__plusicon sa__cardexpand" width="20" height="20" >
                      </div>';
 
                     $i++ ; 
