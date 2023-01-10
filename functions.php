@@ -16,6 +16,12 @@ add_action('after_setup_theme', 'sa_custom_logo_setup');
 function sa_custom_theme(){
     wp_enqueue_style('bootstrap' ,get_stylesheet_directory_uri().'/bootstraplite.css');
    wp_enqueue_style('style' ,get_stylesheet_directory_uri().'/style.css' );
+   wp_enqueue_style('home-style' ,get_stylesheet_directory_uri().'/styles/home.css' );
+   wp_enqueue_style('about-style' ,get_stylesheet_directory_uri().'/styles/about.css' );
+   wp_enqueue_style('contact-style' ,get_stylesheet_directory_uri().'/styles/contact.css' );
+   wp_enqueue_style('service-style' ,get_stylesheet_directory_uri().'/styles/services.css' );
+   wp_enqueue_style('header-style' ,get_stylesheet_directory_uri().'/styles/header.css' );
+   wp_enqueue_style('footer-style' ,get_stylesheet_directory_uri().'/styles/footer.css' );
    wp_enqueue_script( 'application', get_stylesheet_directory_uri().'/assets/js/application.js');   
   
   

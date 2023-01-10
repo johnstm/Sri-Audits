@@ -22,12 +22,12 @@ get_header();
 
 <?php   get_template_part('template-parts/main-banner') ; ?>
 
-<p class="sa__about-who main-heading">Who we are</p>
+
 
 
 
 <section class="sa__about1wrapper">
-
+<p class="sa__about-who main-heading">Who we are</p>
 
 <div class="contentwrapper">
     <div class="sa__about-textcontent1">

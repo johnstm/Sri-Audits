@@ -13,11 +13,12 @@ get_header();
     
     <?php $bannerimg = get_field('landingbanner'); ?>
     <img class="sa-home__banner" src=<?php
-     if($bannerimg)
-        echo $bannerimg["url"]; 
-      ?>
+     if($bannerimg) {
+         echo $bannerimg["url"];
+     }
+?>
       alt ="Sri audits Chartered Associates"  > 
-      <img src="<?php echo get_template_directory_uri().'/assets/images/Mobile-backgnd.png';?>" class="sa-home__banner-mobile"    alt ="Sri audits Chartered Associates">
+      <img src="<?php echo get_template_directory_uri().'/assets/images/Mobile-backgnd.png';?>" class="sa-home__banner-mobile" alt ="Sri audits Chartered Associates">
     <div class="wrapper__1">
         <div class="contentwrapper">
             <div class="testo__1">
@@ -74,9 +75,9 @@ get_header();
                     We provide all services except public issue of shares and listing of companies and we look forward for an opportunity to extend our experience to these areas also. 
                     <br><br>
                     We aim at assuring quality services to our clients in a professional and ethical manner and to grow further through the growth of our clients.' ;
-                    
-                    echo $welcometext;
-                    ?>
+
+echo $welcometext;
+?>
                 </p>
             </div>
 
@@ -94,7 +95,9 @@ get_header();
        
         <div>
             <?php $image3 = get_field('our_mission_image'); ?>
-            <img src="<?php if($image3)echo $image3["url"] ; ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
+            <img src="<?php if($image3) {
+                echo $image3["url"] ;
+            } ?>" alt="<?php echo $image3["alt"]; ?>" class="sa__ourmission-image" />
         </div>
         <div class="sa__ourmission-aim">
             <span class="t1 paragraphs">What We aim</span> 
@@ -144,27 +147,26 @@ get_header();
 
 <div class="contentwrapper sa__servies-gridwrap">
 
-    <?php 
-        $i = 1; 
+    <?php
+        $i = 1;
 
-        while(true){
-            
-            $card_title = get_field("services")["services_title_$i"]  ; //get_field("services[services_title_$i]");
-            $card_image = get_field("services")["service_thumbnail_$i"] ; //get_field("services_thumbnail_$i");
+while(true) {
+    $card_title = get_field("services")["services_title_$i"]  ; //get_field("services[services_title_$i]");
+    $card_image = get_field("services")["service_thumbnail_$i"] ; //get_field("services_thumbnail_$i");
 
-            if(!$card_image || !$card_title){
-                break ; 
-            }
+    if(!$card_image || !$card_title) {
+        break ;
+    }
 
-            echo '
+    echo '
             <div class="sa__service-card">
                     <img src="'.$card_image['url'].'" alt="'.$card_title.'" class="sa__service-card-img">
                     <p>'.$card_title.'</p>
             </div>';
-            
-            $i++ ; 
-        }
-    ?>
+
+    $i++ ;
+}
+?>
 </div>
 
 </section>
@@ -179,26 +181,27 @@ get_header();
         <div class="splide__track">
             <div class="splide__list">
                  <?php
-                    $i=1 ;
+                $i=1 ;
 
-                    while(true){
-                        $name = get_field("memname_$i");
-                        $designation = get_field("memdes_$i");
-                        $m_image =  get_field("memicon_$i");
-                        $iconpath = get_template_directory_uri().'/assets/images/member-icon.png'; 
+while(true) {
+    $name = get_field("memname_$i");
+    $designation = get_field("memdes_$i");
+    $m_image =  get_field("memicon_$i");
+    $iconpath = get_template_directory_uri().'/assets/images/member-icon.png';
 
-                        if(!$name || !$designation){
-                            break;
-                        }
+    if(!$name || !$designation) {
+        break;
+    }
 
-                        $placeholder_icon ; 
+    $placeholder_icon ;
 
-                        if($m_image)
-                        $placeholder_icon = $m_image['url'];
-                        else
-                        $placeholder_icon = $iconpath ;
+    if($m_image) {
+        $placeholder_icon = $m_image['url'];
+    } else {
+        $placeholder_icon = $iconpath ;
+    }
 
-                        echo '<div class="sa__team-member">
+    echo '<div class="sa__team-member">
                                 <img src="'.$placeholder_icon.'" class="sa__team-icon"/>
                                 <div class="sa__team-details">
                                     <h4>'.$name.'</h4>
@@ -206,9 +209,9 @@ get_header();
                                 </div>
                              </div>
                              ';
-                        $i++ ;
-                    }
-                ?> 
+    $i++ ;
+}
+?> 
             </div>
         </div>
 
@@ -252,9 +255,9 @@ get_header();
                     The foundation of Batgach has ethical standards and timeliness in execution. Batgach & Affiliates – an network approved by Institute of Chartered Accountants of India has a presence across sixteen cities in India. 
                     <br><br>
                     Batgach has a team of 70 partners Chartered Accountants and 700 other professional staff. All affiliate partners has professional expertise in multi-disciplinary fields.' ;
-                    
-                    echo $welcometext;
-                    ?>
+
+echo $welcometext;
+?>
                 </p>
             </div>
 
@@ -267,14 +270,14 @@ get_header();
 <?php
 
     if(have_posts()):
- 		while(have_posts()):the_post(); ?>
+        while(have_posts()):the_post(); ?>
     <?php the_content() ?>
     <?php endwhile;
-     else: ?>
-    <?php _e("not posts found","wp_posts") ?>
+    else: ?>
+    <?php _e("not posts found", "wp_posts") ?>
     <?php
-	endif
-	?>
+    endif
+?>
 
 </main>
 <script>

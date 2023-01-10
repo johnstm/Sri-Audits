@@ -1,0 +1,111 @@
+.sa__reserved{
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 14px;
+    line-height: 23px; 
+    letter-spacing: .2px;
+    padding: 5px 0;
+}
+
+.sa__footer{
+
+    padding:58px 5% 50px 5% ;
+    background:  #74000D url("http://127.0.0.1:8080/wordpress/wp-content/uploads/2022/09/footerbg.jpg") no-repeat  ;
+    background-position: left;
+    background-size: cover;
+
+}
+@media screen and (min-width:768px){
+    .sa__footer{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width:992px){
+    .sa__footer{
+        background-position: center;
+    }
+}
+
+.sa__footer-items {
+    display: grid;
+
+    max-width: 1400px;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    padding: 0px;
+    color: #FFFFFF;
+    font-family: var(--font1);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
+@media(min-width:1280px){
+
+    .sa__footer-items {
+        display: flex;
+        padding: 0px;
+        justify-content: space-between;
+
+    }
+}
+
+.sa__footer-items a ,.sa__footer-items a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo-wrap{
+    display: flex;
+  
+}
+.sa__footer .logo-wrap img{
+    width: 290px;
+    object-fit: contain;
+    margin-top: -10px;
+}
+#footersubmenu-1 li{
+
+    margin-bottom: 16px;
+}
+#footersubmenu-1 li:last-child{
+
+    margin-bottom: 0px;
+}
+
+.sa__footer-phone p{
+    margin-bottom: 10px;
+}
+.sa__footer-address p{
+    margin-bottom: 10px;
+}
+.sa__footer-menucustom{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-16px;
+}
+@media screen and (min-width:768px){
+
+    .sa__footer-menucustom{
+        justify-content: normal;
+    }
+}
+@media(min-width:1280px){
+    .sa__footer-menucustom{
+        margin-top:0;
+    }
+}
+.sa__footer-items  address {
+    font-style: normal;
+}
+
+.sa__footer-items  ul {
+    list-style-type: none;
+}
+
+@media screen and (min-width:1025px){
+    .sa__footer-items div{
+        grid-template-columns: auto;
+        justify-content: flex-start;
+    }
+}
